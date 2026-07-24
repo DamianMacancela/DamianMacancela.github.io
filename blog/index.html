@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Artículos sobre ciberseguridad, derecho digital, innovación pública y cooperativismo por Damian Fabricio Macancela Caguana.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blog | Damian Fabricio Macancela Caguana">
+    <meta property="og:description" content="Reflexiones sobre la intersección entre ciberseguridad, derecho y tecnología en Ecuador.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damianmacancela.com/blog/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --card-hover: rgba(255, 255, 255, 0.06);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin: 0 0 1rem 0;
+            color: #ffffff;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        /* Glassmorphism Cards */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .card:hover {
+            background: var(--card-hover);
+            transform: translateY(-5px);
+            border-color: rgba(94, 106, 210, 0.4);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
+        }
+
+        .card-date {
+            font-size: 0.85rem;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin: 0 0 1rem 0;
+            line-height: 1.3;
+            transition: color 0.2s ease;
+        }
+
+        .card:hover .card-title {
+            color: var(--accent);
+        }
+
+        .card-excerpt {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0 0 1.5rem 0;
+            flex-grow: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .card-read-more {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-read-more::after {
+            content: "→";
+            margin-left: 0.5rem;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover .card-read-more::after {
+            transform: translateX(4px);
+            color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .blog-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="../index.html">Volver al portafolio</a>
+        </nav>
+
+        <header>
+            <h1>Bitácora Digital</h1>
+            <p class="subtitle">Reflexiones sobre derecho, ciberseguridad e innovación en Ecuador, por Damian Fabricio Macancela Caguana.</p>
+        </header>
+
+        <div class="blog-grid">
+            
+            <!-- Article 1 -->
+            <a href="derecho-digital.html" class="card">
+                <span class="card-date">24 jul 2026</span>
+                <h2 class="card-title">¿Por qué el Derecho necesita hackers? Reflexiones desde el Azuay</h2>
+                <p class="card-excerpt">A menudo me preguntan cómo es posible ser estudiante de Derecho en la UTPL y de Ciberseguridad en el ITSA. Las leyes son, en esencia, el código fuente de nuestra sociedad, y necesitan ser parchadas.</p>
+                <span class="card-read-more">Leer artículo</span>
+            </a>
+
+            <!-- Article 2 -->
+            <a href="proteccion-datos-ecuador.html" class="card">
+                <span class="card-date">18 jul 2026</span>
+                <h2 class="card-title">La Ley de Protección de Datos en Ecuador</h2>
+                <p class="card-excerpt">Un análisis profundo de los retos de implementación de la LOPDP en el sector corporativo y público. Por qué cumplir no se trata solo de firmar consentimientos, sino de arquitectura de datos.</p>
+                <span class="card-read-more">Leer artículo</span>
+            </a>
+
+            <!-- Article 3 -->
+            <a href="ciberseguridad-cooperativas.html" class="card">
+                <span class="card-date">10 jul 2026</span>
+                <h2 class="card-title">Ciberseguridad en Cooperativas Financieras</h2>
+                <p class="card-excerpt">Lecciones aprendidas desde mi rol como Jefe de Sistemas. Cómo proteger el patrimonio de los socios con presupuestos limitados y por qué la educación del usuario final es la primera línea de defensa.</p>
+                <span class="card-read-more">Leer artículo</span>
+            </a>
+
+            <!-- Article 4 -->
+            <a href="innovacion-publica-azuay.html" class="card">
+                <span class="card-date">5 jul 2026</span>
+                <h2 class="card-title">Innovación Pública en el Azuay: 5 ideas</h2>
+                <p class="card-excerpt">Desde mi participación en el Consejo del Tecnológico del Azuay, propongo cinco iniciativas clave para retener el talento tecnológico local y modernizar la gestión pública provincial.</p>
+                <span class="card-read-more">Leer artículo</span>
+            </a>
+
+            <!-- Article 5 -->
+            <a href="digitalizar-justicia.html" class="card">
+                <span class="card-date">28 jun 2026</span>
+                <h2 class="card-title">Digitalizar la justicia no es escanear un PDF</h2>
+                <p class="card-excerpt">La burocracia judicial en Ecuador requiere un rediseño de procesos, no solo herramientas. Cómo el LegalTech y los contratos inteligentes pueden reducir el rezago en los tribunales.</p>
+                <span class="card-read-more">Leer artículo</span>
+            </a>
+
+            <!-- Article 6 -->
+            <a href="zero-trust-ecuador.html" class="card">
+                <span class="card-date">20 jun 2026</span>
+                <h2 class="card-title">Zero Trust: El modelo de seguridad que las instituciones ecuatorianas necesitan ya</h2>
+                <p class="card-excerpt">El modelo de seguridad perimetral ya no funciona. Por qué la arquitectura de confianza cero es urgente para proteger al Estado frente al ransomware y las filtraciones de datos masivas.</p>
+                <span class="card-read-more">Leer artículo</span>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>

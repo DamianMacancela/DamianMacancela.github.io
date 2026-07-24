@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciberseguridad en Cooperativas: Por qué tu dinero necesita más que una contraseña | Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Descubre las amenazas reales que enfrentan las cooperativas financieras en Ecuador y cómo las protegemos desde adentro, por Damian Fabricio Macancela Caguana.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ciberseguridad en Cooperativas: Por qué tu dinero necesita más que una contraseña">
+    <meta property="og:description" content="Amenazas, defensas y la realidad de proteger el dinero de más de 15,000 socios en Ecuador.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://damianmacancela.com/blog/ciberseguridad-cooperativas.html">
+    <meta property="og:image" content="../img/blog-cover-coop.jpg">
+    <meta property="article:published_time" content="2026-07-10T00:00:00-05:00">
+    <meta property="article:author" content="Damian Fabricio Macancela Caguana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5ed296; /* Green-ish accent for cybersecurity/finance */
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #1a1a2e;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+
+        .content blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 2rem 0;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+
+        .content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 4rem 0;
+        }
+
+        .author-bio {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .author-bio p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .author-bio strong {
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .content h2 {
+                font-size: 1.75rem;
+            }
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Ciberseguridad en Cooperativas: Por qué tu dinero necesita más que una contraseña",
+      "image": [
+        "https://damianmacancela.com/img/blog-cover-coop.jpg"
+       ],
+      "datePublished": "2026-07-10T00:00:00-05:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Damian Fabricio Macancela Caguana",
+          "url": "https://damianmacancela.com"
+        }]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="../index.html">Volver al portafolio</a>
+        </nav>
+
+        <header>
+            <h1>Ciberseguridad en Cooperativas: Por qué tu dinero necesita más que una contraseña</h1>
+            <div class="meta">
+                <div>
+                    <strong>Damian Fabricio Macancela Caguana</strong><br>
+                    10 de julio de 2026 · 6 min de lectura
+                </div>
+            </div>
+        </header>
+
+        <img src="../img/blog-cover-coop.jpg" alt="Servidor y candado verde de seguridad" class="cover-image" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'720\' height=\'405\' viewBox=\'0 0 720 405\' fill=\'%231a1a2e\'%3E%3Crect width=\'720\' height=\'405\' fill=\'%231a1a2e\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23333\' font-family=\'sans-serif\' font-size=\'24\'%3ECiberseguridad%3C/text%3E%3C/svg%3E'">
+
+        <div class="content">
+            <p>La gente suele pensar que el dinero de una cooperativa está guardado en una bóveda de acero enorme, como en las películas. La realidad es que gran parte de ese patrimonio flota en ceros y unos a través de cables de fibra óptica y redes inalámbricas. Como Jefe de Sistemas de una cooperativa con más de 15,000 socios, mi trabajo diario no es cuidar puertas de metal, sino murallas invisibles.</p>
+
+            <p>El sector cooperativo en Ecuador ha crecido de manera impresionante, convirtiéndose en el motor de las economías locales y el refugio para miles de familias. Pero con el crecimiento, hemos entrado en el radar de organizaciones criminales que ya no necesitan armas de fuego para robar un banco. Solo necesitan un correo electrónico.</p>
+
+            <h2>Las amenazas reales que enfrentamos hoy</h2>
+
+            <p>Las cooperativas son un blanco atractivo por una razón dolorosamente sencilla: históricamente, su nivel de madurez en ciberseguridad ha sido menor al de los grandes bancos tradicionales, pero manejan volúmenes de capital igual de tentadores.</p>
+
+            <p>Nuestros mayores enemigos hoy no son hackers superdotados escribiendo código verde en una pantalla negra. Son el <em>Phishing</em>, el <em>Ransomware</em> y la <em>Ingeniería Social</em>. Cada semana interceptamos correos maliciosos diseñados para engañar a nuestros analistas de crédito o ataques dirigidos contra nuestros socios, donde ciberdelincuentes se hacen pasar por la institución para robarles sus credenciales. Un empleado abriendo un PDF infectado puede paralizar toda la organización en cuestión de minutos y secuestrar la base de datos entera.</p>
+
+            <blockquote>La confianza es el pilar de cualquier cooperativa financiera, pero en ciberseguridad, nuestra regla número uno es: "Nunca confíes, siempre verifica" (Zero Trust).</blockquote>
+
+            <h2>De la teoría a la práctica: Así defendemos los ahorros</h2>
+
+            <p>Cuando asumí la jefatura, sabía que poner un antivirus y pedirle a la gente que no haga clic en links extraños no iba a ser suficiente. Tuvimos que rediseñar la arquitectura desde sus cimientos para asegurar que, incluso si un atacante lograba penetrar la primera barrera, no pudiera llevarse nada de valor. Estas son algunas de las medidas reales que implementamos:</p>
+
+            <h3>Segmentación de Red Paranoica</h3>
+            <p>No tiene sentido que la computadora de atención al cliente pueda "ver" el servidor principal de la base de datos. Implementamos una estricta segmentación de red. Si una máquina de ventanilla es comprometida por un malware, el daño se queda atrapado en ese pequeño segmento. Es como los compartimentos estancos de un submarino: si entra agua en uno, cerramos las escotillas y el submarino no se hunde.</p>
+
+            <h3>El escudo del Proxy Inverso</h3>
+            <p>Para nuestros servicios expuestos, implementamos un proxy inverso robusto. Ninguna solicitud externa toca nuestros servidores directamente. Todo pasa primero por un filtro que analiza, limpia y descarta el tráfico malicioso. Si alguien intenta un ataque de denegación de servicio (DDoS) o busca inyectar código en nuestra web, el proxy lo bloquea antes de que siquiera toque nuestra infraestructura real.</p>
+
+            <h3>ZeroTrustRedact: Nuestra Arquitectura DLP</h3>
+            <p>Mi proyecto más personal ha sido la implementación de nuestra arquitectura de <em>Data Loss Prevention</em> (DLP). La llamo <strong>ZeroTrustRedact</strong>. El principio es simple pero poderoso: los datos sensibles (números de cuenta completos, historiales crediticios) se enmascaran en tiempo real. Esto significa que un empleado solo tiene acceso temporal y justificado a los datos exactos que necesita para completar una transacción. Si alguien intenta exportar o copiar la base de datos de manera masiva, el sistema bloquea la acción y levanta una alerta máxima instantáneamente.</p>
+
+            <h2>La seguridad no es un producto, es una cultura</h2>
+
+            <p>Podemos gastar millones en firewalls de última generación, pero si un usuario anota su contraseña en un post-it pegado al monitor, todo ese esfuerzo es en vano. La mayor inversión que hemos hecho en la cooperativa no ha sido en hardware, ha sido en concientización.</p>
+
+            <p>Educamos constantemente a nuestros socios para que no caigan en fraudes telefónicos, y capacitamos a nuestro personal con simulaciones de phishing regulares. Les enseñamos a ser desconfiados por naturaleza cuando están frente a un teclado.</p>
+
+            <h2>Protegiendo el futuro financiero del Ecuador</h2>
+
+            <p>Proteger los ahorros de 15,000 personas del Azuay no me deja dormir tranquilo muchas noches, lo admito. Pero me llena de orgullo saber que estamos liderando con el ejemplo. Las cooperativas necesitan entender que la ciberseguridad no es un gasto de "sistemas", es una inversión directa en la supervivencia y en la confianza de sus socios.</p>
+
+            <p>A las instituciones que aún creen que un ataque informático "no les va a pasar a ellos", les doy un consejo técnico y profesional: despídanse de esa ilusión hoy mismo. Empiecen a asegurar su infraestructura ahora, porque cuando el ransomware cifre sus servidores, el dinero de las familias que confiaron en ustedes será el que pague el precio de su negligencia.</p>
+        </div>
+
+        <hr>
+
+        <div class="author-bio">
+            <img src="../img/perfil.jpg" alt="Damian Fabricio Macancela Caguana" class="author-avatar" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' viewBox=\'0 0 64 64\' fill=\'%23333\'%3E%3Ccircle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23fff\' font-family=\'sans-serif\' font-size=\'20\'%3EDM%3C/text%3E%3C/svg%3E'" style="width: 64px; height: 64px;">
+            <div>
+                <strong>Damian Fabricio Macancela Caguana</strong>
+                <p>Estudiante de Derecho (UTPL) y Ciberseguridad (ITSA). Jefe de Sistemas en el sector financiero y miembro del Consejo del Tecnológico del Azuay. Diseñador de arquitecturas de seguridad que protegen a miles.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

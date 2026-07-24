@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Trust: El modelo de seguridad que las instituciones ecuatorianas necesitan ya | Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Por qué el modelo de seguridad perimetral ya no funciona y cómo la arquitectura Zero Trust es urgente para el sector público y privado en Ecuador, por Damian Fabricio Macancela Caguana.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Zero Trust: El modelo de seguridad que las instituciones ecuatorianas necesitan ya">
+    <meta property="og:description" content="Por qué el modelo de seguridad perimetral ya no funciona y cómo la arquitectura Zero Trust es urgente para el sector público y privado en Ecuador.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://damianmacancela.com/blog/zero-trust-ecuador.html">
+    <meta property="og:image" content="../img/blog-zero-trust.jpg">
+    <meta property="article:published_time" content="2026-06-20T00:00:00-05:00">
+    <meta property="article:author" content="Damian Fabricio Macancela Caguana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #1a1a2e;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+
+        .content blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 2rem 0;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+
+        .content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 4rem 0;
+        }
+
+        .author-bio {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .author-bio p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .author-bio strong {
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .content h2 {
+                font-size: 1.75rem;
+            }
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Zero Trust: El modelo de seguridad que las instituciones ecuatorianas necesitan ya",
+      "image": [
+        "https://damianmacancela.com/img/blog-zero-trust.jpg"
+       ],
+      "datePublished": "2026-06-20T00:00:00-05:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Damian Fabricio Macancela Caguana",
+          "url": "https://damianmacancela.com"
+        }]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">Volver al blog</a>
+        </nav>
+
+        <header>
+            <h1>Zero Trust: El modelo de seguridad que las instituciones ecuatorianas necesitan ya</h1>
+            <div class="meta">
+                <div>
+                    <strong>Damian Fabricio Macancela Caguana</strong><br>
+                    20 de junio de 2026 · 6 min de lectura
+                </div>
+            </div>
+        </header>
+
+        <img src="../img/blog-zero-trust.jpg" alt="Abstracción de seguridad Zero Trust" class="cover-image" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'720\' height=\'405\' viewBox=\'0 0 720 405\' fill=\'%231a1a2e\'%3E%3Crect width=\'720\' height=\'405\' fill=\'%231a1a2e\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23333\' font-family=\'sans-serif\' font-size=\'24\'%3EZero Trust Ecuador%3C/text%3E%3C/svg%3E'">
+
+        <div class="content">
+            <p>Si hay algo que he aprendido en mis años gestionando la infraestructura tecnológica en el sector financiero, es que la seguridad tradicional basada en el concepto de "castillo y foso" está muerta. Imagina que construyes un muro gigante alrededor de tu empresa; controlas quién entra por la puerta principal con firewalls y VPNs, pero una vez que alguien está adentro, confías en él ciegamente. Así es como opera la gran mayoría de las instituciones públicas y privadas en Ecuador. Y es exactamente por eso que nos siguen hackeando.</p>
+
+            <p>El problema de este modelo perimetral es simple: asume que todo lo que está dentro de la red corporativa es seguro. Pero, ¿qué pasa cuando las credenciales de un empleado son robadas mediante un ataque de <em>phishing</em>? El atacante entra por la puerta principal, el sistema le da la bienvenida como a un usuario de confianza, y tiene libertad absoluta para moverse lateralmente e infectar servidores enteros con ransomware.</p>
+
+            <h2>Nunca confíes, siempre verifica</h2>
+
+            <p>Aquí es donde entra el modelo <strong>Zero Trust</strong> (Confianza Cero). Su premisa fundacional es contraintuitiva pero brillante: asume que tu red ya está comprometida. Zero Trust no confía en nadie por defecto, ni desde fuera ni desde dentro de la red. </p>
+
+            <p>En lugar de basarse en desde dónde te conectas (una IP interna, por ejemplo), Zero Trust requiere que cada solicitud de acceso sea rigurosamente autenticada y autorizada de forma continua antes de otorgar el paso a una aplicación o a los datos. Es como tener un guardia de seguridad frente a cada habitación del castillo, exigiéndote identificación cada vez que intentas cruzar una puerta, sin importar si ya estás dentro del recinto.</p>
+
+            <blockquote>La confianza es una vulnerabilidad que los cibercriminales aprendieron a explotar hace años. Zero Trust no es un producto que compras, es una filosofía operativa.</blockquote>
+
+            <h2>De la teoría a la práctica en el cooperativismo</h2>
+
+            <p>Como Jefe de Sistemas en una cooperativa financiera, me enfrento a diario con la tensión entre seguridad y usabilidad. Cuando decidí que debíamos transicionar hacia un modelo Zero Trust, hubo fricción. "Damian, ¿por qué tengo que verificar mi identidad otra vez si ya estoy en la oficina?", me decían. </p>
+
+            <p>Pero la realidad del sector financiero no permite complacencias. Implementamos políticas de mínimo privilegio (dar a los usuarios solo el acceso estrictamente necesario para su trabajo), microsegmentación de la red y autenticación multifactor (MFA) obligatoria y contextual. El resultado fue transformador. No solo mejoramos nuestra postura de seguridad frente a ataques externos, sino que ganamos una visibilidad granular de quién estaba accediendo a qué, y cuándo.</p>
+
+            <p>Fue esta misma visión la que me llevó a crear <strong>ZeroTrustRedact</strong>. Como estudiante de Derecho en la UTPL y técnico en Ciberseguridad del ITSA, veía cómo los documentos legales sensibles circulaban sin control en las organizaciones. ZeroTrustRedact nació como una solución para aplicar la filosofía de confianza cero a nivel de documento, asegurando que la información confidencial sea redactada y protegida criptográficamente antes de ser compartida, mitigando el riesgo de fuga de datos (Data Loss Prevention) desde su origen.</p>
+
+            <h2>El sector público ecuatoriano está en terapia intensiva</h2>
+
+            <p>No necesitamos hacer mucha memoria para recordar los devastadores ataques de ransomware a instituciones críticas del Estado, a corporaciones de telecomunicaciones y a municipios. Datos de millones de ecuatorianos expuestos en la dark web, sistemas caídos durante semanas, trámites paralizados. </p>
+
+            <p>Las instituciones públicas ecuatorianas son un blanco fácil porque siguen ancladas en arquitecturas de red de principios de los 2000. Los presupuestos se gastan en "cajas mágicas" (appliances de seguridad perimetral) mientras las redes internas son planas y carecen de segmentación. </p>
+
+            <p>Para el Estado ecuatoriano, adoptar Zero Trust ya no es una opción de modernización, es una cuestión de seguridad nacional y soberanía digital. Como miembro del Consejo del Tecnológico del Azuay, insisto constantemente en que debemos formar a las nuevas generaciones de profesionales no solo para administrar servidores, sino para diseñar arquitecturas resilientes por defecto.</p>
+
+            <h2>El primer paso</h2>
+
+            <p>Migrar a Zero Trust no sucede de la noche a la mañana. Es un viaje. Empieza por conocer exactamente qué datos tienes y dónde están (algo en lo que nuestro sector público falla estrepitosamente). Sigue con la gestión de identidades y accesos. Requiere voluntad política, presupuesto y, sobre todo, un cambio cultural.</p>
+
+            <p>Pero la alternativa es seguir esperando al próximo gran titular en las noticias sobre cómo una entidad estatal fue víctima de un ciberataque masivo. El modelo de confianza por defecto está obsoleto. Es hora de asumir el control, implementar Zero Trust y empezar a proteger nuestros activos digitales como si nuestra sociedad dependiera de ello. Porque, de hecho, lo hace.</p>
+        </div>
+
+        <hr>
+
+        <div class="author-bio">
+            <img src="../img/perfil.jpg" alt="Damian Fabricio Macancela Caguana" class="author-avatar" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' viewBox=\'0 0 64 64\' fill=\'%23333\'%3E%3Ccircle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23fff\' font-family=\'sans-serif\' font-size=\'20\'%3EDM%3C/text%3E%3C/svg%3E'" style="width: 64px; height: 64px;">
+            <div>
+                <strong>Damian Fabricio Macancela Caguana</strong>
+                <p>Estudiante de Derecho (UTPL) y Ciberseguridad (ITSA). Jefe de Sistemas en el sector financiero, creador de ZeroTrustRedact y miembro del Consejo del Tecnológico del Azuay. Apasionado por la innovación y la seguridad en la era digital.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

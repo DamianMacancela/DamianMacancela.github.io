@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://damianmacancela.github.io/sitemap.xml
