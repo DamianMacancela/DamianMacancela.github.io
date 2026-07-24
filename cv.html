@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Currículum Vitae de Damian Fabricio Macancela Caguana: Jefe de Sistemas, Estudiante de Derecho en la UTPL y Especialista en Ciberseguridad.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="CV de Damian Fabricio Macancela Caguana">
+    <meta property="og:description" content="Currículum Vitae de Damian Fabricio Macancela Caguana: Jefe de Sistemas, Estudiante de Derecho y Ciberseguridad.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://damianmacancela.github.io/cv.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --surface-color: #121226;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        .cv-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0 0 0.5rem 0;
+            color: #ffffff;
+        }
+
+        .headline {
+            font-size: 1.2rem;
+            color: var(--accent);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover {
+            color: var(--text-color);
+        }
+
+        .btn-download {
+            display: inline-block;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1.5rem;
+            background-color: rgba(94, 106, 210, 0.1);
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .btn-download:hover {
+            background-color: var(--accent);
+            color: #fff;
+        }
+
+        section {
+            margin-bottom: 3rem;
+            background-color: var(--surface-color);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .item {
+            margin-bottom: 1.5rem;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+        }
+
+        .item-subtitle {
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .item-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .skill-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 0.9rem;
+            border: 1px solid var(--border-color);
+        }
+
+        ul {
+            margin: 0.5rem 0 0 0;
+            padding-left: 1.5rem;
+            color: #cccccc;
+        }
+
+        li {
+            margin-bottom: 0.3rem;
+        }
+
+        @media (max-width: 600px) {
+            .item-header {
+                flex-direction: column;
+            }
+            .item-date {
+                margin-top: 0.2rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Damian Fabricio Macancela Caguana",
+      "jobTitle": "Jefe de Sistemas | Estudiante de Derecho | Especialista en Ciberseguridad",
+      "url": "https://damianmacancela.github.io",
+      "alumniOf": [
+        {
+          "@type": "EducationalOrganization",
+          "name": "Universidad Técnica Particular de Loja (UTPL)"
+        },
+        {
+          "@type": "EducationalOrganization",
+          "name": "Instituto Tecnológico Superior del Azuay (ITSA)"
+        }
+      ],
+      "knowsAbout": ["DLP", "Zero Trust", "Proxy Inverso", "Auditoría", "Derecho Digital", "LOPDP"]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+        </nav>
+
+        <header class="cv-header">
+            <h1>Damian Fabricio Macancela Caguana</h1>
+            <div class="headline">Jefe de Sistemas | Estudiante de Derecho | Especialista en Ciberseguridad</div>
+            
+            <div class="contact-info">
+                <span>Azuay, Ecuador</span>
+                <span>•</span>
+                <a href="mailto:contacto@damianmacancela.com">contacto@damianmacancela.com</a>
+                <span>•</span>
+                <a href="https://linkedin.com/in/damian-macancela" target="_blank">LinkedIn</a>
+            </div>
+            
+            <a href="#" class="btn-download">Descargar PDF</a>
+        </header>
+
+        <section>
+            <h2>Experiencia Laboral</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Jefe de Sistemas</div>
+                        <div class="item-subtitle">Cooperativa Financiera (Azuay, Ecuador)</div>
+                    </div>
+                    <div class="item-date">Presente</div>
+                </div>
+                <ul>
+                    <li>Gestión y optimización de la infraestructura tecnológica y continuidad del negocio.</li>
+                    <li>Diseño e implementación de arquitectura de seguridad Zero Trust y Data Loss Prevention (DLP).</li>
+                    <li>Auditoría interna y aseguramiento del cumplimiento normativo (SEPS y LOPDP).</li>
+                    <li>Supervisión de equipos técnicos y administración de servidores financieros críticos.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Miembro del Consejo</div>
+                        <div class="item-subtitle">Consejo Tecnológico del Azuay</div>
+                    </div>
+                    <div class="item-date">Presente</div>
+                </div>
+                <ul>
+                    <li>Asesoría en políticas de innovación y desarrollo tecnológico en la región.</li>
+                    <li>Promoción de iniciativas de gobierno abierto y modernización pública.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Derecho</div>
+                        <div class="item-subtitle">Universidad Técnica Particular de Loja (UTPL)</div>
+                    </div>
+                    <div class="item-date">En curso</div>
+                </div>
+                <ul>
+                    <li>Especialización e interés en Derecho Digital, Privacidad y Propiedad Intelectual.</li>
+                </ul>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <div class="item-title">Tecnología en Ciberseguridad</div>
+                        <div class="item-subtitle">Instituto Tecnológico Superior del Azuay (ITSA)</div>
+                    </div>
+                    <div class="item-date">En curso</div>
+                </div>
+                <ul>
+                    <li>Formación técnica en protección de redes, análisis de vulnerabilidades y criptografía.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades Técnicas y Legales</h2>
+            <div class="skills-grid">
+                <div class="skill-item">DLP (Data Loss Prevention)</div>
+                <div class="skill-item">Arquitectura Zero Trust</div>
+                <div class="skill-item">Proxy Inverso y DPI</div>
+                <div class="skill-item">Auditoría de Sistemas</div>
+                <div class="skill-item">Derecho Digital</div>
+                <div class="skill-item">LOPDP (Ecuador)</div>
+                <div class="skill-item">Administración de Redes</div>
+                <div class="skill-item">Gobierno Abierto</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificaciones</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Certificaciones en curso / Planificadas</div>
+                </div>
+                <ul>
+                    <li><em>Próximamente...</em></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Idiomas</h2>
+            <ul>
+                <li><strong>Español:</strong> Nativo</li>
+                <li><strong>Inglés:</strong> Intermedio-Avanzado (Lectura técnica fluida)</li>
+            </ul>
+        </section>
+
+    </div>
+
+</body>
+</html>

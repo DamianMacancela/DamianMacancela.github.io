@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos de Damian Fabricio Macancela Caguana | Portafolio</title>
+    <meta name="description" content="Explora los proyectos de Damian Fabricio Macancela Caguana en ciberseguridad, desarrollo y derecho digital. ZeroTrustRedact, DLP Financiera y más.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Proyectos de Damian Fabricio Macancela Caguana">
+    <meta property="og:description" content="Explora los proyectos de Damian Fabricio Macancela Caguana en ciberseguridad, desarrollo y derecho digital.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damianmacancela.github.io/proyectos.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+        }
+
+        .meta {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        .content h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+        
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1.5rem;
+        }
+        
+        .project-tags span {
+            background: rgba(94, 106, 210, 0.15);
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .content h2 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Proyectos de Damian Fabricio Macancela Caguana",
+      "description": "Portafolio de proyectos de ciberseguridad y desarrollo por Damian Fabricio Macancela Caguana.",
+      "author": {
+        "@type": "Person",
+        "name": "Damian Fabricio Macancela Caguana"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+        </nav>
+
+        <header>
+            <h1>Proyectos y Casos de Estudio</h1>
+            <div class="meta">
+                Selección de trabajos de Damian Fabricio Macancela Caguana integrando tecnología, seguridad y derecho.
+            </div>
+        </header>
+
+        <div class="content">
+            
+            <article>
+                <h2>ZeroTrustRedact</h2>
+                <div class="project-tags">
+                    <span>Ciberseguridad</span>
+                    <span>Desarrollo</span>
+                    <span>Protección de Datos</span>
+                </div>
+                <p><strong>Motivación:</strong> Con la entrada en vigor de normativas estrictas de privacidad de datos, identifiqué la necesidad de una herramienta automatizada que pudiera sanitizar documentos legales y financieros antes de su distribución pública, minimizando el error humano en la censura de datos sensibles.</p>
+                
+                <h3>Explicación Técnica y Arquitectura</h3>
+                <p>ZeroTrustRedact es una solución desarrollada internamente para la redacción automática (censura) de PII (Información Personal Identificable). Utiliza modelos de Procesamiento de Lenguaje Natural (NLP) para identificar nombres, números de identificación (cédulas), direcciones y montos financieros dentro de documentos PDF y texto plano. La arquitectura está diseñada bajo los principios de <em>Zero Trust</em>, garantizando que los documentos se procesan en memoria y no se almacenan en disco sin cifrado, asegurando que el proceso mismo de limpieza no se convierta en un punto de fuga.</p>
+                
+                <h3>Impacto</h3>
+                <p>Redujo el tiempo de procesamiento de documentos en un 80% y eliminó casi por completo las incidencias de exposición accidental de datos personales, asegurando el cumplimiento con los estándares legales de privacidad.</p>
+            </article>
+
+            <article>
+                <h2>Arquitectura DLP Financiera</h2>
+                <div class="project-tags">
+                    <span>Infraestructura</span>
+                    <span>Auditoría</span>
+                    <span>Finanzas</span>
+                </div>
+                <p><strong>Motivación:</strong> Como Jefe de Sistemas en una cooperativa financiera, el riesgo de fuga de información (tanto maliciosa como accidental) es una amenaza constante que puede costar millones y destruir la reputación institucional.</p>
+                
+                <h3>Explicación Técnica y Arquitectura</h3>
+                <p>Una solución de Data Loss Prevention (DLP) no es solo un software, es una estrategia integral. Diseñé e implementé una arquitectura DLP que monitorea el flujo de datos en tránsito (redes, correos), datos en reposo (bases de datos, servidores de archivos) y datos en uso (endpoints). Implementé clasificadores automatizados de sensibilidad, bloqueos en puertos USB, cifrado de discos (BitLocker) y un proxy inverso para la inspección profunda de tráfico web (DPI).</p>
+                
+                <h3>Impacto</h3>
+                <p>Logramos visibilidad completa sobre los datos corporativos, previniendo exfiltraciones. La auditoría interna demostró una madurez de seguridad elevada, posicionando a la cooperativa como líder en el cumplimiento de normativas de la Superintendencia de Economía Popular y Solidaria (SEPS) de Ecuador.</p>
+            </article>
+            
+            <article>
+                <h2>Plataforma de Transparencia Municipal</h2>
+                <div class="project-tags">
+                    <span>Innovación Pública</span>
+                    <span>Gobierno Abierto</span>
+                    <span>UI/UX</span>
+                </div>
+                <p><strong>Visión:</strong> Impulsado por mi interés en la política y mi rol en el Consejo Tecnológico del Azuay, concebí este proyecto para modernizar la forma en que los municipios presentan su información financiera y de contratación pública a los ciudadanos.</p>
+                
+                <h3>El Prototipo y Potencial</h3>
+                <p>El prototipo consta de un dashboard interactivo que se conecta a fuentes de datos abiertos. En lugar de complejos archivos de Excel, los ciudadanos pueden explorar los presupuestos, procesos de contratación pública y el estado de las obras mediante visualizaciones claras (gráficos dinámicos, mapas interactivos). La plataforma fue diseñada con un enfoque <em>mobile-first</em> y estándares de accesibilidad.</p>
+                
+                <h3>Impacto Proyectado</h3>
+                <p>El potencial de esta plataforma es enorme para reducir la opacidad en la gestión pública local. Facilita la auditoría ciudadana, promueve la participación cívica y fortalece la confianza en las instituciones del Estado, cerrando la brecha entre el ciudadano de a pie y la administración pública.</p>
+            </article>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
