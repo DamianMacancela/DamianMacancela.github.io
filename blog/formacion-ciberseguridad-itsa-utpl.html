@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De la Técnica al Derecho: Por Qué Combiné Ciberseguridad (ITSA) con Leyes (UTPL) | Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Historia personal de Damian Fabricio Macancela Caguana sobre combinar ciberseguridad en el ITSA con estudios de derecho en la UTPL.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="De la Técnica al Derecho: Por Qué Combiné Ciberseguridad con Leyes">
+    <meta property="og:description" content="Historia personal sobre combinar ciberseguridad en el ITSA con estudios de derecho en la UTPL, creando un perfil híbrido para Ecuador.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://damianmacancela.com/blog/formacion-ciberseguridad-itsa-utpl.html">
+    <meta property="og:image" content="../img/blog-cover.jpg">
+    <meta property="article:published_time" content="2026-07-01T00:00:00-05:00">
+    <meta property="article:author" content="Damian Fabricio Macancela Caguana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #1a1a2e;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+
+        .content blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 2rem 0;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+
+        .content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 4rem 0;
+        }
+
+        .author-bio {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .author-bio p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .author-bio strong {
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .content h2 {
+                font-size: 1.75rem;
+            }
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "De la Técnica al Derecho: Por Qué Combiné Ciberseguridad (ITSA) con Leyes (UTPL)",
+      "image": [
+        "https://damianmacancela.com/img/blog-cover.jpg"
+       ],
+      "datePublished": "2026-07-01T00:00:00-05:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Damian Fabricio Macancela Caguana",
+          "url": "https://damianmacancela.com"
+        }]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="../index.html">Volver al portafolio</a>
+        </nav>
+
+        <header>
+            <h1>De la Técnica al Derecho: Por Qué Combiné Ciberseguridad (ITSA) con Leyes (UTPL)</h1>
+            <div class="meta">
+                <div>
+                    <strong>Damian Fabricio Macancela Caguana</strong><br>
+                    1 de julio de 2026 · 5 min de lectura
+                </div>
+            </div>
+        </header>
+
+        <img src="../img/blog-cover.jpg" alt="Ciberseguridad y Derecho" class="cover-image" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'720\' height=\'405\' viewBox=\'0 0 720 405\' fill=\'%231a1a2e\'%3E%3Crect width=\'720\' height=\'405\' fill=\'%231a1a2e\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23333\' font-family=\'sans-serif\' font-size=\'24\'%3EImagen de Portada%3C/text%3E%3C/svg%3E'">
+
+        <div class="content">
+            <p>Es común que las personas reaccionen con sorpresa al conocer mi perfil. Por un lado, mi día a día profesional transcurre entre servidores, políticas de seguridad de la información y auditorías de sistemas, desempeñándome como Jefe de Sistemas en una cooperativa financiera y formándome en Ciberseguridad en el Instituto Tecnológico Superior del Azuay (ITSA). Por otro lado, paso mis noches y fines de semana sumergido en códigos penales, jurisprudencia y doctrina legal como estudiante de Derecho en la Universidad Técnica Particular de Loja (UTPL).</p>
+
+            <p>A primera vista, parece un cruce extraño de cables. La pregunta inevitable surge en cada reunión o entrevista: "¿Por qué estudiar Derecho cuando ya tienes una carrera consolidada en tecnología?". La respuesta, para mí, ha sido cada vez más clara a medida que el mundo se digitaliza: la tecnología sin un marco ético y legal es peligrosa, y el derecho que no comprende la tecnología es inútil.</p>
+
+            <h2>El punto de inflexión en Sistemas</h2>
+
+            <p>Mi carrera en el sector financiero me puso rápidamente frente a frente con la cruda realidad del cibercrimen y la gestión de datos. Como responsable de IT, mi deber primario era asegurar la infraestructura. Implementar firewalls, encriptación, y protocolos de recuperación ante desastres.</p>
+
+            <p>Sin embargo, pronto me di cuenta de que las mayores vulnerabilidades rara vez son exclusivamente técnicas. Los verdaderos problemas surgían en las áreas grises: la interpretación de normativas de la Superintendencia, la redacción de contratos con proveedores de nube, los conflictos laborales derivados del uso de tecnología por parte de los empleados, o cómo actuar legalmente tras detectar un intento de fraude cibernético interno.</p>
+
+            <blockquote>Comprendí que podía ser el mejor ingeniero construyendo murallas digitales, pero si no entendía las leyes que operaban dentro y fuera de esas murallas, mi capacidad de proteger a la organización y a las personas era limitada.</blockquote>
+
+            <h2>El choque cultural: ITSA y UTPL</h2>
+
+            <p>Estudiar en el ITSA me ha brindado un enfoque pragmático y técnico. La ciberseguridad es una disciplina de constante actualización, donde lo que funcionaba hace seis meses puede estar obsoleto hoy. Te enseña a pensar como un atacante para poder defenderte, a analizar riesgos y a actuar con rapidez ante incidentes.</p>
+
+            <p>Entrar a la Facultad de Derecho de la UTPL fue adentrarme en un mundo completamente distinto. El derecho exige rigor argumentativo, respeto por los precedentes y una comprensión profunda de la historia institucional. Te enseña que las palabras tienen peso, que los procedimientos importan y que la justicia a menudo requiere de tiempos que desesperarían a cualquier ingeniero de software.</p>
+
+            <p>Lejos de ser incompatibles, estas visiones se complementan. La lógica estructurada de la programación me ayuda a esquematizar casos legales complejos, y la formación jurídica me permite analizar las arquitecturas de software desde la perspectiva del cumplimiento normativo (Compliance) y los derechos humanos.</p>
+
+            <h2>La urgencia del perfil híbrido en Ecuador</h2>
+
+            <p>Ecuador está atravesando una transición digital acelerada, pero accidentada. Tenemos una nueva Ley Orgánica de Protección de Datos Personales, instituciones públicas sufriendo ciberataques de ransomware que paralizan servicios vitales, y un sector judicial que apenas está aprendiendo a lidiar con la prueba digital y los delitos informáticos.</p>
+
+            <p>Actualmente, cuando ocurre un incidente cibernético grave, suele haber un teléfono descompuesto. Los ingenieros hablan en un idioma técnico (hashes, logs, inyecciones SQL) que los abogados y jueces no logran traducir a responsabilidades jurídicas claras. Y los abogados redactan normativas o contratos tecnológicos con términos que los ingenieros saben que son técnicamente inviables.</p>
+
+            <p>Esa brecha de comunicación cuesta dinero, retrasa la innovación y vulnera los derechos de los ciudadanos. Necesitamos traductores. Necesitamos profesionales que puedan sentarse en una mesa directiva y explicar el riesgo de un ciberataque en términos de responsabilidad civil de los directores, o que puedan auditar el código de un contrato inteligente y determinar su validez legal.</p>
+
+            <h2>Construyendo puentes</h2>
+
+            <p>Mi objetivo al combinar la Ciberseguridad en el ITSA con el Derecho en la UTPL no es simplemente acumular títulos. Es convertirme en un arquitecto de soluciones que funcionen tanto a nivel de código como a nivel de ley.</p>
+            
+            <p>Creo firmemente que el futuro de la asesoría profesional no pertenecerá a los especialistas puros, sino a los profesionales "T" (aquellos con conocimientos profundos en un área, pero con una amplia base de comprensión en otras). En la era de la Inteligencia Artificial y la hiperconectividad, las mejores soluciones nacerán en la intersección de las disciplinas.</p>
+
+            <p>Si eres un técnico que siente curiosidad por las leyes, o un abogado fascinado por la tecnología, mi consejo es: cruza el puente. Es un camino exigente, no voy a mentir, pero la perspectiva que ganas es invaluable.</p>
+        </div>
+
+        <hr>
+
+        <div class="author-bio">
+            <img src="../img/perfil.jpg" alt="Damian Fabricio Macancela Caguana" class="author-avatar" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' viewBox=\'0 0 64 64\' fill=\'%23333\'%3E%3Ccircle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23fff\' font-family=\'sans-serif\' font-size=\'20\'%3EDM%3C/text%3E%3C/svg%3E'" style="width: 64px; height: 64px;">
+            <div>
+                <strong>Damian Fabricio Macancela Caguana</strong>
+                <p>Estudiante de Derecho (UTPL) y Ciberseguridad (ITSA). Jefe de Sistemas en el sector financiero y miembro del Consejo del Tecnológico del Azuay. Apasionado por la innovación y la justicia en la era digital.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

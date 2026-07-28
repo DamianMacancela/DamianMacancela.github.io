@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Recursos: LOPDP, Ciberseguridad y Derecho Digital — Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Hub de recursos gratuito y educativo sobre LOPDP, ciberseguridad y derecho digital en Ecuador. Creado por Damian Fabricio Macancela Caguana.">
+    <meta name="keywords" content="recursos LOPDP Ecuador, guia ciberseguridad cooperativas, Damian Macancela, Damian Fabricio Macancela Caguana, ciberseguridad Ecuador, derecho digital">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Centro de Recursos: LOPDP, Ciberseguridad y Derecho Digital — Damian Fabricio Macancela Caguana">
+    <meta property="og:description" content="Hub de recursos educativo sobre LOPDP, ciberseguridad y derecho digital en Ecuador.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damianmacancela.com/recursos-lopdp.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --card-hover: rgba(255, 255, 255, 0.06);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.95rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1rem 0;
+            color: #ffffff;
+        }
+        
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .article-card:hover {
+            background: var(--card-hover);
+            transform: translateY(-3px);
+            border-color: rgba(94, 106, 210, 0.4);
+        }
+
+        .article-card h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .article-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        
+        ul.checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.checklist li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        ul.checklist li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Centro de Recursos: LOPDP, Ciberseguridad y Derecho Digital",
+          "description": "Hub de recursos gratuito y educativo sobre LOPDP, ciberseguridad y derecho digital en Ecuador.",
+          "author": {
+            "@id": "#person"
+          }
+        },
+        {
+          "@type": "Person",
+          "@id": "#person",
+          "name": "Damian Fabricio Macancela Caguana",
+          "alternateName": ["Fabricio Macancela", "Damian Macancela"],
+          "url": "https://damianmacancela.com"
+        }
+      ]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">Volver al inicio</a>
+        </nav>
+
+        <header>
+            <h1>Centro de Recursos</h1>
+            <p class="subtitle">Un hub de recursos gratuito y educativo sobre LOPDP, Ciberseguridad y Derecho Digital, creado por Damian Fabricio Macancela Caguana.</p>
+        </header>
+
+        <h2>Resumen Explicativo: LOPDP en Ecuador</h2>
+        <div class="card">
+            <p>La Ley Orgánica de Protección de Datos Personales (LOPDP) transformó el ecosistema digital ecuatoriano, obligando a instituciones públicas y privadas a cambiar sus arquitecturas de datos. Su cumplimiento no se limita a firmar un consentimiento informado, sino que requiere políticas robustas de ciberseguridad y gestión documental.</p>
+            <p><strong>Puntos clave:</strong></p>
+            <ul class="checklist">
+                <li>Consentimiento libre, específico, informado e inequívoco.</li>
+                <li>Derechos ARCO+ (Acceso, Rectificación, Cancelación, Oposición, Portabilidad, etc.).</li>
+                <li>Implementación de medidas de seguridad técnicas y organizativas.</li>
+                <li>Obligación de notificar vulneraciones de seguridad de datos personales.</li>
+            </ul>
+        </div>
+
+        <h2>Check-list de Cumplimiento Básico de Ciberseguridad</h2>
+        <div class="card">
+            <p>Herramienta diseñada especialmente para Cooperativas de Ahorro y Crédito, así como PYMES en Ecuador, para evaluar su postura inicial de seguridad.</p>
+            <ul class="checklist">
+                <li>¿Se realiza concienciación y capacitación continua sobre phishing a los empleados?</li>
+                <li>¿Existe un inventario actualizado de activos de información y software?</li>
+                <li>¿Se implementa el principio de menor privilegio en los accesos de red y sistemas?</li>
+                <li>¿Están implementadas arquitecturas de copias de seguridad (Regla 3-2-1)?</li>
+                <li>¿Se han integrado herramientas de DLP (Prevención de Pérdida de Datos)?</li>
+                <li>¿Existen políticas formales de respuesta a incidentes cibernéticos?</li>
+            </ul>
+        </div>
+
+        <h2>Directorio de Artículos y Publicaciones</h2>
+        <p>A continuación, el compendio de los 16 artículos técnicos escritos por Damian Fabricio Macancela Caguana, clasificados por área de especialidad.</p>
+        
+        <h3>Ciberseguridad Financiera</h3>
+        <div class="grid">
+            <a href="blog/ciberseguridad-cooperativas.html" class="article-card">
+                <h4>Ciberseguridad en Cooperativas</h4>
+                <p>Por qué tu dinero necesita más que una contraseña.</p>
+            </a>
+            <a href="blog/auditorias-ciberseguridad-cooperativas-ahorro.html" class="article-card">
+                <h4>Auditorías en Cooperativas</h4>
+                <p>El reto de las evaluaciones cibernéticas de ahorro y crédito.</p>
+            </a>
+            <a href="blog/dlp-prevencion-fugas-informacion.html" class="article-card">
+                <h4>Arquitecturas DLP</h4>
+                <p>Prevención de fugas de información en Instituciones Financieras.</p>
+            </a>
+            <a href="blog/zero-trust-ecuador.html" class="article-card">
+                <h4>Zero Trust en Ecuador</h4>
+                <p>El modelo que las instituciones necesitan adoptar hoy.</p>
+            </a>
+            <a href="blog/zero-trust-redact-arquitectura.html" class="article-card">
+                <h4>Inside ZeroTrustRedact</h4>
+                <p>Desidentificación y privacidad en la arquitectura de datos.</p>
+            </a>
+            <a href="blog/phishing-ingenieria-social-ecuador.html" class="article-card">
+                <h4>Anatomía del Phishing</h4>
+                <p>Cómo opera la ingeniería social en Ecuador.</p>
+            </a>
+        </div>
+
+        <h3>Derecho & LOPDP</h3>
+        <div class="grid">
+            <a href="blog/derecho-digital.html" class="article-card">
+                <h4>¿Por qué el Derecho necesita hackers?</h4>
+                <p>Una mirada a la intersección del código y la ley.</p>
+            </a>
+            <a href="blog/proteccion-datos-ecuador.html" class="article-card">
+                <h4>LOPDP en Ecuador</h4>
+                <p>Lo que nadie te cuenta sobre la nueva ley.</p>
+            </a>
+            <a href="blog/derechos-arco-lopdp-guia.html" class="article-card">
+                <h4>Guía de Derechos ARCO</h4>
+                <p>Cómo ejercer tus derechos en Ecuador paso a paso.</p>
+            </a>
+            <a href="blog/inteligencia-artificial-derecho-ecuador.html" class="article-card">
+                <h4>IA y el Futuro del Derecho</h4>
+                <p>El impacto de la inteligencia artificial en el marco legal ecuatoriano.</p>
+            </a>
+            <a href="blog/formacion-ciberseguridad-itsa-utpl.html" class="article-card">
+                <h4>De la Técnica al Derecho</h4>
+                <p>Reflexiones sobre la formación en ITSA y UTPL.</p>
+            </a>
+        </div>
+
+        <h3>Innovación y Política Pública</h3>
+        <div class="grid">
+            <a href="blog/innovacion-publica-azuay.html" class="article-card">
+                <h4>Innovación en el Azuay</h4>
+                <p>5 ideas que ya deberían ser realidad.</p>
+            </a>
+            <a href="blog/el-futuro-tecnologico-azuay.html" class="article-card">
+                <h4>Azuay como Polo Tecnológico</h4>
+                <p>El futuro de la innovación y tecnología en la provincia.</p>
+            </a>
+            <a href="blog/digitalizar-justicia.html" class="article-card">
+                <h4>Digitalizar la Justicia</h4>
+                <p>Por qué no se trata solo de escanear un PDF.</p>
+            </a>
+            <a href="blog/transparencia-algoritmica-gestion-publica.html" class="article-card">
+                <h4>Transparencia Algorítmica</h4>
+                <p>Datos abiertos en la gestión pública.</p>
+            </a>
+            <a href="blog/gobernanza-digital-gads-municipios.html" class="article-card">
+                <h4>Gobernanza Digital</h4>
+                <p>El camino para modernizar GADs y Municipios.</p>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
