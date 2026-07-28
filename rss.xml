@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+    <title>Blog Oficial de Damian Fabricio Macancela Caguana — Derecho, Ciberseguridad e Innovación</title>
+    <link>https://damianmacancela.github.io/</link>
+    <description>Publicaciones oficiales de Damian Fabricio Macancela Caguana sobre Derecho Digital, Ciberseguridad en Cooperativas Financieras, Ley de Protección de Datos (LOPDP), ZeroTrustRedact e Innovación Pública en Azuay y Ecuador.</description>
+    <language>es-ec</language>
+    <lastBuildDate>Mon, 27 Jul 2026 23:00:00 -0500</lastBuildDate>
+    <atom:link href="https://damianmacancela.github.io/rss.xml" rel="self" type="application/rss+xml" />
+    <copyright>2026 Damian Fabricio Macancela Caguana</copyright>
+    <managingEditor>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</managingEditor>
+    <webMaster>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</webMaster>
+    <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+
+    <item>
+        <title>Inteligencia Artificial y el Futuro del Derecho en Ecuador: ¿Oportunidad o Riesgo?</title>
+        <link>https://damianmacancela.github.io/blog/inteligencia-artificial-derecho-ecuador.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/inteligencia-artificial-derecho-ecuador.html</guid>
+        <description>Análisis técnico-legal por Damian Fabricio Macancela Caguana sobre cómo los modelos de inteligencia artificial transformarían la administración de justicia en Ecuador y el ejercicio del Derecho en la UTPL y el país.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sat, 25 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>¿Por qué el Derecho necesita hackers? Reflexiones desde el Azuay</title>
+        <link>https://damianmacancela.github.io/blog/derecho-digital.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/derecho-digital.html</guid>
+        <description>Artículo por Damian Fabricio Macancela Caguana sobre la imperiosa necesidad de combinar conocimientos de Ciberseguridad (ITSA) con la ciencia jurídica del Derecho para combatir la impunidad informática.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Fri, 24 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Arquitecturas DLP en Instituciones Financieras: Guía Práctica desde la Trinchera</title>
+        <link>https://damianmacancela.github.io/blog/dlp-prevencion-fugas-informacion.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/dlp-prevencion-fugas-informacion.html</guid>
+        <description>Guía técnica redactada por Damian Fabricio Macancela Caguana, Jefe de Sistemas, para la implementación de prevención de fuga de datos (DLP) y salvaguardar información de más de 15,000 socios.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Wed, 22 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Transparencia Algorítmica y Datos Abiertos: La Deuda con el Ciudadano</title>
+        <link>https://damianmacancela.github.io/blog/transparencia-algoritmica-gestion-publica.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/transparencia-algoritmica-gestion-publica.html</guid>
+        <description>Propuesta de innovación pública y auditoría cívica por Damian Fabricio Macancela Caguana para gobiernos locales, municipalidades y GADs de Ecuador.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sun, 19 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>La Ley de Protección de Datos en Ecuador: Lo que nadie te está contando</title>
+        <link>https://damianmacancela.github.io/blog/proteccion-datos-ecuador.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/proteccion-datos-ecuador.html</guid>
+        <description>Crítica constructiva y análisis legal diario de Damian Fabricio Macancela Caguana sobre la LOPDP en el sistema cooperativo ecuatoriano.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sat, 18 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Cómo Ejercer tus Derechos ARCO en Ecuador: Guía Ciudadana ante la LOPDP</title>
+        <link>https://damianmacancela.github.io/blog/derechos-arco-lopdp-guia.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/derechos-arco-lopdp-guia.html</guid>
+        <description>Manual ciudadano creado por Damian Fabricio Macancela Caguana para ejercer derechos de Acceso, Rectificación, Cancelación y Oposición ante instituciones y corporaciones en Ecuador.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Wed, 15 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>El Reto de las Auditorías de Ciberseguridad en las Cooperativas de Ahorro y Crédito</title>
+        <link>https://damianmacancela.github.io/blog/auditorias-ciberseguridad-cooperativas-ahorro.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/auditorias-ciberseguridad-cooperativas-ahorro.html</guid>
+        <description>Análisis sobre normativas SEPS, seguridad perimetral y auditoría técnica bancaria por Damian Fabricio Macancela Caguana.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sun, 12 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Ciberseguridad en Cooperativas: Por qué tu dinero necesita más que una contraseña</title>
+        <link>https://damianmacancela.github.io/blog/ciberseguridad-cooperativas.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/ciberseguridad-cooperativas.html</guid>
+        <description>Artículo educativo y técnico por Damian Fabricio Macancela Caguana sobre amenazas de phishing, ransomware y defensa bancaria en Ecuador.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Fri, 10 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Anatomía del Phishing en Ecuador: Cómo Protegemos a +15,000 Socios en Tiempo Real</title>
+        <link>https://damianmacancela.github.io/blog/phishing-ingenieria-social-ecuador.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/phishing-ingenieria-social-ecuador.html</guid>
+        <description>Estudio de caso y respuesta ante incidentes cibernéticos financieros por Damian Fabricio Macancela Caguana.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Wed, 08 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Innovación Pública en el Azuay: 5 ideas que ya deberían ser realidad</title>
+        <link>https://damianmacancela.github.io/blog/innovacion-publica-azuay.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/innovacion-publica-azuay.html</guid>
+        <description>5 propuestas realizables para Cuenca y el Azuay en digitalización cívica, presentadas por Damian Fabricio Macancela Caguana.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sun, 05 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Azuay como Polo de Innovación y Tecnología: Mi Visión desde el Consejo del Tec Azuay</title>
+        <link>https://damianmacancela.github.io/blog/el-futuro-tecnologico-azuay.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/el-futuro-tecnologico-azuay.html</guid>
+        <description>Perspectiva tecnológica y educativa de Damian Fabricio Macancela Caguana como miembro del Consejo del Tecnológico del Azuay.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Fri, 03 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>De la Técnica al Derecho: Por Qué Combiné Ciberseguridad (ITSA) con Leyes (UTPL)</title>
+        <link>https://damianmacancela.github.io/blog/formacion-ciberseguridad-itsa-utpl.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/formacion-ciberseguridad-itsa-utpl.html</guid>
+        <description>Historia profesional y motivación de Damian Fabricio Macancela Caguana para fusionar la carrera de Derecho en la UTPL y Ciberseguridad en el ITSA.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Wed, 01 Jul 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Digitalizar la justicia no es escanear un PDF: Transformación Judicial</title>
+        <link>https://damianmacancela.github.io/blog/digitalizar-justicia.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/digitalizar-justicia.html</guid>
+        <description>Análisis crítico de Damian Fabricio Macancela Caguana sobre la modernización real de los juzgados y procesos legales en Ecuador.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sun, 28 Jun 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Inside ZeroTrustRedact: Automatizando la Desidentificación y Privacidad del Dato</title>
+        <link>https://damianmacancela.github.io/blog/zero-trust-redact-arquitectura.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/zero-trust-redact-arquitectura.html</guid>
+        <description>Documentación técnica y visión de Damian Fabricio Macancela Caguana sobre el software ZeroTrustRedact para protección de datos personales.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Thu, 25 Jun 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Gobernanza Digital en GADs y Municipios: Transformar el Estado sin Dilapidar en Licencias</title>
+        <link>https://damianmacancela.github.io/blog/gobernanza-digital-gads-municipios.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/gobernanza-digital-gads-municipios.html</guid>
+        <description>Estrategias de soberanía tecnológica y arquitectura eficiente para municipios del Ecuador por Damian Fabricio Macancela Caguana.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Mon, 22 Jun 2026 10:00:00 -0500</pubDate>
+    </item>
+
+    <item>
+        <title>Zero Trust: El modelo de seguridad que las instituciones ecuatorianas necesitan ya</title>
+        <link>https://damianmacancela.github.io/blog/zero-trust-ecuador.html</link>
+        <guid isPermaLink="true">https://damianmacancela.github.io/blog/zero-trust-ecuador.html</guid>
+        <description>Por qué la seguridad perimetral tradicional ha muerto y cómo implementar Zero Trust en el sector público según Damian Fabricio Macancela Caguana.</description>
+        <author>contacto@damianmacancela.com (Damian Fabricio Macancela Caguana)</author>
+        <dc:creator>Damian Fabricio Macancela Caguana</dc:creator>
+        <pubDate>Sat, 20 Jun 2026 10:00:00 -0500</pubDate>
+    </item>
+</channel>
+</rss>
