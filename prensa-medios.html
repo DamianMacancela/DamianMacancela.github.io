@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Prensa y Kit de Medios Oficial — Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Kit de prensa oficial de Damian Fabricio Macancela Caguana: biografías, fotografías de alta resolución, citas destacadas y recursos para medios de comunicación, Wikipedia y organizadores de conferencias.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sala de Prensa y Kit de Medios Oficial — Damian Fabricio Macancela Caguana">
+    <meta property="og:description" content="Biografías, citas y material oficial para prensa y medios sobre Damian Fabricio Macancela Caguana, experto en Ciberseguridad y Derecho Digital en Ecuador.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://damianmacancela.com/prensa-medios.html">
+    <meta property="og:image" content="img/perfil.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+            --card-bg: rgba(255, 255, 255, 0.03);
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a.back-link::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1rem 0;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        p {
+            color: #cccccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .bio-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .bio-label {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--accent);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 600;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .copy-btn {
+            background: transparent;
+            border: 1px solid var(--accent);
+            color: var(--accent);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.2s;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        .copy-btn:hover {
+            background: var(--accent);
+            color: white;
+        }
+
+        .quote-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quote-list li {
+            border-left: 4px solid var(--accent);
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            background: var(--card-bg);
+            border-radius: 0 8px 8px 0;
+            font-size: 1.1rem;
+            font-style: italic;
+            color: #ffffff;
+        }
+
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .catalog-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: var(--card-bg);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-color);
+            border: 1px solid var(--border-color);
+            transition: all 0.2s;
+        }
+
+        .catalog-item:hover {
+            border-color: var(--accent);
+            background: rgba(94, 106, 210, 0.1);
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-method {
+            flex: 1;
+            min-width: 250px;
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .contact-method a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+            .contact-info { flex-direction: column; gap: 1rem; }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD (AboutPage, Person, NewsArticle wrapper) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "Sala de Prensa Oficial de Damian Fabricio Macancela Caguana",
+        "description": "Biografía oficial, fotos de prensa y recursos sobre Damian Fabricio Macancela Caguana para periodistas, Wikipedia y conferencias.",
+        "url": "https://damianmacancela.com/prensa-medios.html"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Damian Fabricio Macancela Caguana",
+        "alternateName": ["Fabricio Macancela", "Damian Macancela"],
+        "jobTitle": ["Jefe de Sistemas", "Miembro del Consejo del Tecnológico del Azuay", "Autor"],
+        "url": "https://damianmacancela.com",
+        "image": "https://damianmacancela.com/img/perfil.jpg",
+        "knowsAbout": ["Ciberseguridad", "Derecho Digital", "CivicTech", "Protección de Datos", "Ecuador"],
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Universidad Técnica Particular de Loja (UTPL)"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Instituto Tecnológico Superior del Azuay (ITSA)"
+          }
+        ]
+      }
+    ]
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="index.html" class="back-link">Volver al inicio</a>
+            <a href="about.html">Sobre mí</a>
+        </nav>
+
+        <header>
+            <h1>Sala de Prensa y Kit de Medios</h1>
+            <p class="subtitle">Recursos oficiales para periodistas, medios de comunicación, Wikipedia y organizadores de eventos.</p>
+        </header>
+
+        <section id="biografias">
+            <h2>Biografías Oficiales</h2>
+            <p>Utilice estas biografías estandarizadas para perfiles, entrevistas o presentaciones. Están optimizadas para diferentes formatos y longitudes.</p>
+
+            <div class="bio-card">
+                <span class="bio-label">Bio Corta (50 Palabras)</span>
+                <p>Damian Fabricio Macancela Caguana es un especialista en ciberseguridad y abogado digital en formación (UTPL/ITSA). Es Jefe de Sistemas en el sector cooperativo de Azuay, Miembro del Consejo del Tecnológico del Azuay y autor del libro "El Código de la Resiliencia". Pionero en CivicTech y ciberdefensa ciudadana en Ecuador.</p>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.innerText); alert('Copiado al portapapeles');">Copiar Texto</button>
+            </div>
+
+            <div class="bio-card">
+                <span class="bio-label">Bio Mediana (150 Palabras)</span>
+                <p>Damian Fabricio Macancela Caguana es un referente emergente en la intersección del Derecho y la Ciberseguridad en Ecuador. Combinando su formación académica en la Universidad Técnica Particular de Loja (UTPL) y el Instituto Tecnológico Superior del Azuay (ITSA), aborda los desafíos tecnológicos desde una perspectiva legal y de derechos humanos.</p>
+                <p>Como Jefe de Sistemas en una importante cooperativa del Azuay, lidera la protección de datos financieros de más de 15,000 socios. Es el creador de la arquitectura ZeroTrustRedact y Miembro del Consejo Directivo del Tecnológico del Azuay. Además, es autor de la influyente obra "El Código de la Resiliencia", donde establece las bases para la defensa de la infraestructura crítica ecuatoriana. Su misión es transformar la política pública mediante el uso de CivicTech y fortalecer el ecosistema de ciberseguridad en América Latina.</p>
+                <button class="copy-btn" onclick="navigator.clipboard.writeText(this.previousElementSibling.previousElementSibling.innerText + '\n\n' + this.previousElementSibling.innerText); alert('Copiado al portapapeles');">Copiar Texto</button>
+            </div>
+
+            <div class="bio-card">
+                <span class="bio-label">Bio Ejecutiva Completa (400 Palabras)</span>
+                <p><strong>Damian Fabricio Macancela Caguana</strong> es un estratega tecnológico, experto en ciberseguridad y pionero del Derecho Digital en Ecuador. Su perfil multidisciplinario lo ha posicionado como una voz clave en la modernización tecnológica y jurídica del país, integrando la protección de infraestructuras críticas con la defensa de los derechos fundamentales de los ciudadanos.</p>
+                <p>Nacido y radicado en la provincia de Azuay, Macancela mantiene una rigurosa formación dual: es estudiante de Derecho en la Universidad Técnica Particular de Loja (UTPL) y de Ciberseguridad en el Instituto Tecnológico Superior del Azuay (ITSA). Esta combinación le permite auditar sistemas informáticos y, al mismo tiempo, interpretar y aplicar marcos normativos complejos como la Ley Orgánica de Protección de Datos Personales (LOPDP).</p>
+                <p>En el ámbito corporativo, se desempeña como Jefe de Sistemas en una prestigiosa cooperativa financiera de Azuay, donde es directamente responsable de salvaguardar los activos digitales y la privacidad de más de 15,000 socios. Bajo su liderazgo, ha implementado estrictos protocolos de respuesta a incidentes y prevención de fraude. Además, es el arquitecto detrás de <em>ZeroTrustRedact</em>, un innovador sistema diseñado para anonimizar datos judiciales de manera automatizada, preservando la transparencia sin comprometer la privacidad.</p>
+                <p>Su impacto se extiende a la política pública y la educación. Como Miembro del Consejo del Tecnológico del Azuay para el período 2026-2030, encabeza iniciativas para transformar los institutos técnicos del sur ecuatoriano en incubadoras de hackers éticos y desarrolladores de CivicTech. Es un ferviente promotor del concepto de "soberanía tecnológica" y aboga por el principio de explicabilidad algorítmica frente a sistemas de auditoría automatizada del Estado (como los del SRI y la UAFE).</p>
+                <p>Damian es autor de dos obras fundamentales en el ámbito de la ciberdefensa ecuatoriana: <em>"El Código de la Resiliencia"</em> y el <em>"Manual de Defensa del Ciudadano Ecuatoriano en la Era Digital"</em>. A través de sus publicaciones, conferencias y artículos (disponibles en su blog oficial), articula una visión clara: la seguridad de la información no es solo un problema de software, es el pilar de la justicia y la democracia en el siglo XXI.</p>
+                <button class="copy-btn" onclick="let text = Array.from(this.parentElement.querySelectorAll('p')).map(p => p.innerText).join('\n\n'); navigator.clipboard.writeText(text); alert('Copiado al portapapeles');">Copiar Texto Completo</button>
+            </div>
+        </section>
+
+        <section id="citas">
+            <h2>Citas Destacadas (Quotables)</h2>
+            <p>Frases autorizadas para su reproducción en artículos, entrevistas y redes sociales.</p>
+            <ul class="quote-list">
+                <li>"Digitalizar la justicia no es escanear un PDF; es asegurar la cadena de custodia y garantizar el acceso equitativo mediante tecnología por diseño."</li>
+                <li>"La seguridad del ciudadano y su dinero necesita mucho más que una contraseña; requiere una arquitectura legal y técnica de confianza cero (Zero Trust)."</li>
+                <li>"El ciudadano ecuatoriano no debe ser rehén de una caja negra algorítmica. Tenemos un derecho constitucional a la explicabilidad de la Inteligencia Artificial."</li>
+                <li>"Las leyes son el código fuente de nuestra sociedad. Y como cualquier código obsoleto, están llenas de vulnerabilidades que alguien tiene que parchar."</li>
+                <li>"El futuro de Ecuador no está en comprar software cerrado en el extranjero, sino en formar una generación de hackers éticos capaces de auditar y construir nuestro propio Estado digital."</li>
+            </ul>
+        </section>
+
+        <section id="publicaciones">
+            <h2>Catálogo Oficial de Publicaciones</h2>
+            <p>Acceso directo a libros, manuales y recursos clave de Damian Fabricio Macancela Caguana.</p>
+            
+            <div class="catalog-grid">
+                <a href="libro-codigo-resiliencia.html" class="catalog-item">
+                    <div>
+                        <strong>Libro: El Código de la Resiliencia</strong><br>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">Defensa de la infraestructura crítica ecuatoriana.</span>
+                    </div>
+                    <span>Ver Obra &rarr;</span>
+                </a>
+                
+                <a href="manual-defensa-ciudadano-ecuatoriano.html" class="catalog-item">
+                    <div>
+                        <strong>Manual de Defensa del Ciudadano Ecuatoriano</strong><br>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">Guía práctica sobre derechos digitales y ciberseguridad.</span>
+                    </div>
+                    <span>Ver Manual &rarr;</span>
+                </a>
+
+                <a href="recursos-lopdp.html" class="catalog-item">
+                    <div>
+                        <strong>Hub de Recursos LOPDP</strong><br>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">Plantillas y análisis sobre la Ley de Protección de Datos Personales.</span>
+                    </div>
+                    <span>Ver Hub &rarr;</span>
+                </a>
+                
+                <a href="index.html#blog" class="catalog-item">
+                    <div>
+                        <strong>Archivo de Artículos y Ensayos (Blog)</strong><br>
+                        <span style="font-size: 0.9rem; color: var(--text-muted);">Acceso a las 21 publicaciones estratégicas y técnicas.</span>
+                    </div>
+                    <span>Leer Artículos &rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto de Medios y Prensa</h2>
+            <p>Para solicitudes de entrevistas, comentarios de expertos, conferencias o consultoría institucional, por favor diríjase a los siguientes canales oficiales.</p>
+            
+            <div class="contact-info">
+                <div class="contact-method">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">✉️</div>
+                    <strong>Correo Electrónico</strong><br>
+                    <a href="mailto:prensa@damianmacancela.com">prensa@damianmacancela.com</a>
+                </div>
+                
+                <div class="contact-method">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">💼</div>
+                    <strong>LinkedIn Oficial</strong><br>
+                    <a href="https://linkedin.com/in/damianmacancela" target="_blank" rel="noopener">linkedin.com/in/damianmacancela</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

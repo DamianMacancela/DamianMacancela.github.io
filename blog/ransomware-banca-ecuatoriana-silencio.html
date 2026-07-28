@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ransomware en la Banca Ecuatoriana: Anatomía del Silencio Corporativo y la Respuesta Zero Trust | Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Análisis del silencio corporativo en la banca ecuatoriana ante ataques de ransomware y cómo aplicar una arquitectura Zero Trust real en cooperativas financieras.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ransomware en la Banca Ecuatoriana: Anatomía del Silencio Corporativo y la Respuesta Zero Trust">
+    <meta property="og:description" content="Análisis del silencio corporativo en la banca ecuatoriana ante ataques de ransomware y cómo aplicar una arquitectura Zero Trust real en cooperativas financieras.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://damianmacancela.com/blog/ransomware-banca-ecuatoriana-silencio.html">
+    <meta property="og:image" content="../img/blog-cover.jpg">
+    <meta property="article:published_time" content="2026-07-27T00:00:00-05:00">
+    <meta property="article:author" content="Damian Fabricio Macancela Caguana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #1a1a2e;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+
+        .content blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 2rem 0;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+
+        .content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 4rem 0;
+        }
+
+        .author-bio {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .author-bio p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .author-bio strong {
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .content h2 {
+                font-size: 1.75rem;
+            }
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Ransomware en la Banca Ecuatoriana: Anatomía del Silencio Corporativo y la Respuesta Zero Trust",
+      "image": [
+        "https://damianmacancela.com/img/blog-cover.jpg"
+       ],
+      "datePublished": "2026-07-27T00:00:00-05:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Damian Fabricio Macancela Caguana",
+          "url": "https://damianmacancela.com"
+        }]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="../index.html">Volver al portafolio</a>
+        </nav>
+
+        <header>
+            <h1>Ransomware en la Banca Ecuatoriana: Anatomía del Silencio Corporativo y la Respuesta Zero Trust</h1>
+            <div class="meta">
+                <div>
+                    <strong>Damian Fabricio Macancela Caguana</strong><br>
+                    27 de julio de 2026 · 6 min de lectura
+                </div>
+            </div>
+        </header>
+
+        <img src="../img/blog-cover.jpg" alt="Ciberseguridad y Banca Ecuatoriana" class="cover-image" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'720\' height=\'405\' viewBox=\'0 0 720 405\' fill=\'%231a1a2e\'%3E%3Crect width=\'720\' height=\'405\' fill=\'%231a1a2e\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23333\' font-family=\'sans-serif\' font-size=\'24\'%3EImagen de Portada%3C/text%3E%3C/svg%3E'">
+
+        <div class="content">
+            <p>El escenario es dolorosamente predecible: una institución financiera ecuatoriana anuncia de repente un "mantenimiento urgente del sistema" que durará todo el fin de semana. Los canales digitales se caen, los cajeros automáticos dejan de dispensar efectivo y, en las oficinas, los ejecutivos sudan frío mientras intentan calmar a miles de clientes ansiosos. Detrás de las puertas cerradas, la realidad es otra: no hay mantenimiento. Están bajo ataque de ransomware.</p>
+
+            <p>Como Jefe de Sistemas en una cooperativa financiera y especialista en Ciberseguridad, he visto esta historia repetirse demasiadas veces en nuestro país. Lo que más me preocupa no es el ataque en sí —los ciberdelincuentes siempre encontrarán nuevas vulnerabilidades— sino la epidemia de silencio corporativo que le sigue. Las instituciones prefieren ocultar la verdad, pagar rescates en la sombra y arriesgar la información de sus clientes, en lugar de afrontar la situación con transparencia ciudadana y madurez técnica.</p>
+
+            <h2>El peligro de los "Mantenimientos del Sistema"</h2>
+
+            <p>Cuando un banco o cooperativa disfraza un ataque de ransomware bajo el eufemismo de "falla técnica", no solo está mintiendo a sus usuarios; está quebrando el pilar fundamental del sistema financiero: la confianza. La Ley Orgánica de Protección de Datos Personales en Ecuador exige notificar las vulneraciones en un plazo de cinco días. Sin embargo, en la práctica, vemos cómo la cultura del ocultamiento prevalece.</p>
+
+            <blockquote>El silencio ante un ciberataque no es una estrategia de relaciones públicas; es una negligencia sistémica que empodera a los criminales y deja indefensos a los ciudadanos.</blockquote>
+
+            <p>En mi experiencia gestionando la infraestructura tecnológica de cooperativas con más de 15,000 socios, he adoptado una postura radicalmente distinta: la transparencia radical respaldada por una defensa proactiva. Si tu arquitectura es robusta, no tienes por qué temer a la verdad.</p>
+
+            <h2>Implementando Zero Trust en Cooperativas Financieras</h2>
+
+            <p>Para evitar caer en el ciclo de ataques y silencios, la respuesta técnica no es comprar más antivirus, sino cambiar el paradigma hacia una arquitectura <strong>Zero Trust</strong> (Confianza Cero). En términos sencillos: "nunca confíes, siempre verifica".</p>
+
+            <p>En nuestra cooperativa, hemos implementado este modelo basándonos en principios estrictos que desarrollo a fondo en mi obra <a href="../libro-codigo-resiliencia.html">El Código de la Resiliencia</a>:</p>
+
+            <ul>
+                <li><strong>Microsegmentación de la red:</strong> Si un terminal es comprometido, el ransomware no puede propagarse lateralmente hacia los servidores <em>core</em>.</li>
+                <li><strong>Autenticación multifactor (MFA) obligatoria:</strong> No importa si eres el cajero o el gerente general, el acceso a sistemas críticos requiere múltiples pruebas de identidad.</li>
+                <li><strong>Prevención de Fuga de Datos (DLP):</strong> Sistemas automatizados que detectan y bloquean la extracción anómala de bases de datos antes de que el ransomware pueda exfiltrar la información para extorsionar a la institución.</li>
+            </ul>
+
+            <h2>La Ética del Hacker frente a la Crisis</h2>
+
+            <p>Mi formación dual en Derecho y Ciberseguridad me ha enseñado que la resiliencia tecnológica debe ir de la mano con la responsabilidad legal. Si protegemos los servidores pero abandonamos a los usuarios, hemos fracasado. Por eso, en mi <a href="../manual-defensa-ciudadano-ecuatoriano.html">Manual de Defensa para el Ciudadano Ecuatoriano</a>, dedico capítulos enteros a cómo las personas comunes pueden proteger su dinero e identidad cuando las instituciones fallan.</p>
+
+            <p>El Ecuador necesita un cambio profundo en su cultura de ciberseguridad corporativa. Debemos dejar de ver a los ataques como un tabú vergonzoso y empezar a tratarlos como lo que son: incidentes complejos que requieren respuestas colectivas, transparencia gubernamental y, sobre todo, arquitecturas tecnológicas diseñadas para resistir sin mentir.</p>
+
+            <p>La próxima vez que veas un aviso de "mantenimiento imprevisto" prolongado, pregúntate: ¿Qué están ocultando? Y más importante aún, ¿está mi dinero en una institución que invierte en seguridad real o solo en relaciones públicas?</p>
+        </div>
+
+        <hr>
+
+        <div class="author-bio">
+            <img src="../img/perfil.jpg" alt="Damian Fabricio Macancela Caguana" class="author-avatar" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' viewBox=\'0 0 64 64\' fill=\'%23333\'%3E%3Ccircle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23fff\' font-family=\'sans-serif\' font-size=\'20\'%3EDM%3C/text%3E%3C/svg%3E'" style="width: 64px; height: 64px;">
+            <div>
+                <strong>Damian Fabricio Macancela Caguana</strong>
+                <p>Estudiante de Derecho (UTPL) y Ciberseguridad (ITSA). Jefe de Sistemas en el sector financiero y miembro del Consejo del Tecnológico del Azuay. Apasionado por la innovación y la justicia en la era digital.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

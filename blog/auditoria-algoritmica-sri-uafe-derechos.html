@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditoría Algorítmica en el SRI y UAFE: Derechos del Contribuyente ante la Inteligencia Artificial | Damian Fabricio Macancela Caguana</title>
+    <meta name="description" content="Análisis legal-informático sobre cómo el Estado ecuatoriano usa sistemas automatizados para auditoría fiscal y antilavado, y por qué los ciudadanos tienen derecho al principio de explicabilidad del algoritmo.">
+    <meta name="author" content="Damian Fabricio Macancela Caguana">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Auditoría Algorítmica en el SRI y UAFE: Derechos del Contribuyente ante la Inteligencia Artificial">
+    <meta property="og:description" content="Análisis legal-informático sobre el uso de sistemas automatizados por el SRI y UAFE en Ecuador, y los derechos de los ciudadanos a la explicabilidad algorítmica.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://damianmacancela.com/blog/auditoria-algoritmica-sri-uafe-derechos.html">
+    <meta property="og:image" content="../img/blog-cover.jpg">
+    <meta property="article:published_time" content="2026-07-23T00:00:00-05:00">
+    <meta property="article:author" content="Damian Fabricio Macancela Caguana">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a1a;
+            --text-color: #e8e6e3;
+            --text-muted: #a0a0b0;
+            --accent: #5e6ad2;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        nav {
+            margin-bottom: 3rem;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover {
+            color: var(--text-color);
+        }
+
+        nav a::before {
+            content: "←";
+            margin-right: 0.5rem;
+        }
+
+        header {
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 0 0 1.5rem 0;
+            color: #ffffff;
+        }
+
+        .meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .author-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background-color: #333;
+        }
+
+        .cover-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            background-color: #1a1a2e;
+        }
+
+        .content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            color: #ffffff;
+        }
+
+        .content h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            color: #cccccc;
+        }
+
+        .content blockquote {
+            border-left: 4px solid var(--accent);
+            margin: 2rem 0;
+            padding: 0.5rem 0 0.5rem 1.5rem;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #ffffff;
+        }
+
+        .content a {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 4rem 0;
+        }
+
+        .author-bio {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 4rem;
+        }
+
+        .author-bio p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .author-bio strong {
+            color: var(--text-color);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            .content h2 {
+                font-size: 1.75rem;
+            }
+            .author-bio {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Auditoría Algorítmica en el SRI y UAFE: Derechos del Contribuyente ante la Inteligencia Artificial",
+      "image": [
+        "https://damianmacancela.com/img/blog-cover.jpg"
+       ],
+      "datePublished": "2026-07-23T00:00:00-05:00",
+      "author": [{
+          "@type": "Person",
+          "name": "Damian Fabricio Macancela Caguana",
+          "url": "https://damianmacancela.com"
+        }]
+    }
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <a href="../index.html">Volver al portafolio</a>
+        </nav>
+
+        <header>
+            <h1>Auditoría Algorítmica en el SRI y UAFE: Derechos del Contribuyente ante la Inteligencia Artificial</h1>
+            <div class="meta">
+                <div>
+                    <strong>Damian Fabricio Macancela Caguana</strong><br>
+                    23 de julio de 2026 · 6 min de lectura
+                </div>
+            </div>
+        </header>
+
+        <img src="../img/blog-cover.jpg" alt="IA y Auditoría Fiscal" class="cover-image" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'720\' height=\'405\' viewBox=\'0 0 720 405\' fill=\'%231a1a2e\'%3E%3Crect width=\'720\' height=\'405\' fill=\'%231a1a2e\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23333\' font-family=\'sans-serif\' font-size=\'24\'%3EImagen de Portada%3C/text%3E%3C/svg%3E'">
+
+        <div class="content">
+            <p>La modernización del Estado ecuatoriano avanza de manera inexorable. Hoy en día, instituciones de control fiscal y financiero como el Servicio de Rentas Internas (SRI) y la Unidad de Análisis Financiero y Económico (UAFE) han implementado sofisticados sistemas informáticos e Inteligencia Artificial (IA) para la detección de irregularidades. Como estudiante de Derecho en la UTPL y de Ciberseguridad en el ITSA, así como Jefe de Sistemas en el sector financiero cooperativo, observo con atención esta intersección donde la tecnología audita al ciudadano.</p>
+
+            <h2>El Estado Vigilante: Big Data y Modelos Predictivos</h2>
+
+            <p>El cruce de datos masivo ya no es ciencia ficción en Ecuador. El SRI utiliza herramientas analíticas para comparar los ingresos declarados, los gastos por tarjetas de crédito, las transacciones en el sistema financiero y el patrimonio. La UAFE procesa millones de Reportes de Operaciones Sospechosas (ROS). Todo esto está gestionado, cada vez más, por algoritmos de <em>Machine Learning</em> diseñados para identificar patrones anómalos.</p>
+
+            <p>El problema no radica en el uso de la tecnología para combatir la evasión fiscal o el lavado de activos, fines legítimos y necesarios. El conflicto surge en la opacidad de los algoritmos y la vulneración del debido proceso. ¿Qué ocurre cuando un modelo de IA comete un error, o peor aún, cuando incurre en un sesgo sistemático que perjudica al contribuyente?</p>
+
+            <blockquote>El ciudadano no debe ser rehén de una caja negra algorítmica. Tiene el derecho constitucional a saber cómo y por qué una máquina lo ha clasificado como sospechoso o evasor.</blockquote>
+
+            <h2>El Principio de Explicabilidad y la LOPDP</h2>
+
+            <p>La Ley Orgánica de Protección de Datos Personales (LOPDP) de Ecuador es clara respecto a las decisiones automatizadas. Establece que todo titular de datos tiene derecho a no ser sometido a una decisión basada única o parcialmente en valoraciones automatizadas que produzcan efectos jurídicos sobre él.</p>
+
+            <p>Más importante aún, consagra el principio de explicabilidad. Si un algoritmo del SRI decide que un contribuyente tiene una discrepancia patrimonial no justificada e inicia un proceso de determinación, el Estado debe poder explicar, en términos comprensibles y auditables, los parámetros, la lógica y los datos utilizados por el sistema. "La computadora lo dijo" no es un argumento jurídico válido frente a las garantías constitucionales del derecho a la defensa y la presunción de inocencia.</p>
+
+            <h2>La Defensa al Amparo de la Constitución</h2>
+
+            <p>Ante una glosa o un reporte generado mayoritariamente por automatización, la defensa del contribuyente no puede limitarse a la contabilidad tradicional. Requiere una <strong>auditoría algorítmica</strong>. Los abogados del futuro (y del presente) debemos exigir la apertura de estas cajas negras. Debemos solicitar peritajes informáticos forenses que validen si los conjuntos de datos de entrenamiento estaban sesgados o si la lógica del sistema infringe principios de proporcionalidad.</p>
+
+            <p>Mi formación dual me ha convencido de que la seguridad jurídica hoy depende de la ciberseguridad y la transparencia algorítmica. Como desarrollo en mayor profundidad en mi obra, <a href="../libro-codigo-resiliencia.html">El Código de la Resiliencia</a>, la verdadera protección del ciudadano frente al poder estatal requiere que las leyes entiendan de código y que los códigos respeten las leyes.</p>
+
+            <p>El Estado debe modernizarse, pero esa modernización no puede estar por encima de los derechos fundamentales. Exigir que los algoritmos rindan cuentas no es frenar el progreso; es garantizar que la inteligencia artificial se someta a la inteligencia de nuestra Constitución.</p>
+        </div>
+
+        <hr>
+
+        <div class="author-bio">
+            <img src="../img/perfil.jpg" alt="Damian Fabricio Macancela Caguana" class="author-avatar" onerror="this.src='data:image/svg+xml;charset=UTF-8,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'64\' height=\'64\' viewBox=\'0 0 64 64\' fill=\'%23333\'%3E%3Ccircle cx=\'32\' cy=\'32\' r=\'32\' fill=\'%23333\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23fff\' font-family=\'sans-serif\' font-size=\'20\'%3EDM%3C/text%3E%3C/svg%3E'" style="width: 64px; height: 64px;">
+            <div>
+                <strong>Damian Fabricio Macancela Caguana</strong>
+                <p>Estudiante de Derecho (UTPL) y Ciberseguridad (ITSA). Jefe de Sistemas en el sector financiero y miembro del Consejo del Tecnológico del Azuay. Autor de "El Código de la Resiliencia".</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
