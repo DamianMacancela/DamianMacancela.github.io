@@ -1,111 +1,182 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="89gW7SaDpY0ZgRUkHqJefg6GS9ODzCINMI7hoIkqiLY" />
     <meta name="google-site-verification" content="OthQr-aknqXN6XvLkCIz8skaMbBlf4eg2h9qg8ZZjYM" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyectos de Damian Fabricio Macancela Caguana | Portafolio</title>
-    <meta name="description" content="Explora los proyectos de Damian Fabricio Macancela Caguana en ciberseguridad, desarrollo y derecho digital. ZeroTrustRedact, DLP Financiera y más.">
+    <title>Proyectos & Obras Técnicas de Damian Fabricio Macancela Caguana | Ciberseguridad & CivicTech</title>
+    <meta name="description" content="Repositorio central de obras técnicas, proyectos de ingeniería cívica y ciberdefensa financiera creados por Damian Fabricio Macancela Caguana en Ecuador under SENADI / Código Ingenios.">
     <meta name="author" content="Damian Fabricio Macancela Caguana">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="Proyectos de Damian Fabricio Macancela Caguana">
-    <meta property="og:description" content="Explora los proyectos de Damian Fabricio Macancela Caguana en ciberseguridad, desarrollo y derecho digital.">
+    <!-- Open Graph & SEO -->
+    <meta property="og:title" content="Obras & Proyectos de Ingeniería - Damian Fabricio Macancela Caguana">
+    <meta property="og:description" content="Explora las arquitecturas Zero Trust, motores de sanitización de PII, tableros CivicTech de Azuay y toolkits jurídicos LOPDP en repositorios abiertos.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://damianmacancela.github.io/proyectos.html">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
 
     <style>
         :root {
-            --bg-color: #0a0a1a;
+            --bg-color: #080911;
+            --card-bg: rgba(22, 27, 46, 0.6);
             --text-color: #e8e6e3;
-            --text-muted: #a0a0b0;
-            --accent: #5e6ad2;
+            --text-muted: #9ba1b8;
+            --accent: #4ecdc4;
+            --accent-gold: #d4a574;
+            --accent-purple: #8678f9;
+            --border-glow: rgba(78, 205, 196, 0.25);
         }
+
+        * { box-sizing: border-box; }
 
         body {
             background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(78, 205, 196, 0.08) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(134, 120, 249, 0.08) 0px, transparent 50%);
             color: var(--text-color);
             font-family: 'Inter', sans-serif;
-            line-height: 1.8;
+            line-height: 1.7;
             margin: 0;
             padding: 0;
-            font-size: 18px;
+            font-size: 17px;
             -webkit-font-smoothing: antialiased;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 720px;
+            max-width: 1080px;
             margin: 0 auto;
-            padding: 2rem 1.5rem;
+            padding: 3rem 1.5rem;
         }
 
         nav {
-            margin-bottom: 3rem;
+            margin-bottom: 2.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         nav a {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
+            font-weight: 500;
             display: inline-flex;
             align-items: center;
-            transition: color 0.2s ease;
+            transition: all 0.3s ease;
+            padding: 0.4rem 1rem;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.02);
         }
 
         nav a:hover {
             color: var(--text-color);
-        }
-
-        nav a::before {
-            content: "←";
-            margin-right: 0.5rem;
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(78, 205, 196, 0.2);
+            transform: translateY(-1px);
         }
 
         header {
-            margin-bottom: 3rem;
+            text-align: center;
+            margin-bottom: 4rem;
+            padding: 3rem 2rem;
+            background: linear-gradient(135deg, rgba(22, 27, 46, 0.8), rgba(15, 19, 34, 0.9));
+            border: 1px solid rgba(212, 165, 116, 0.25);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
         h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            line-height: 1.2;
-            margin: 0 0 1.5rem 0;
-            color: #ffffff;
+            font-size: 3.2rem;
+            line-height: 1.15;
+            margin: 0 0 1rem 0;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-gold) 50%, var(--accent) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .meta {
             color: var(--text-muted);
-            font-size: 0.95rem;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
-        .content h2 {
+        .legal-badge {
+            display: inline-block;
+            margin-top: 1.2rem;
+            padding: 0.4rem 1rem;
+            background: rgba(212, 165, 116, 0.15);
+            border: 1px solid var(--accent-gold);
+            border-radius: 50px;
+            color: var(--accent-gold);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 { font-size: 2.3rem; }
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            backdrop-filter: blur(12px);
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(78, 205, 196, 0.15);
+        }
+
+        .project-card.flagship {
+            border: 1px solid rgba(212, 165, 116, 0.4);
+            background: linear-gradient(145deg, rgba(22, 27, 46, 0.9), rgba(28, 22, 38, 0.7));
+        }
+
+        .project-card.flagship:hover {
+            border-color: var(--accent-gold);
+            box-shadow: 0 15px 35px rgba(212, 165, 116, 0.25);
+        }
+
+        .project-header h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-top: 3.5rem;
-            margin-bottom: 1rem;
-            color: var(--accent);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-            padding-bottom: 0.5rem;
-        }
-
-        .content h3 {
-            font-family: 'Inter', sans-serif;
-            font-size: 1.2rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 1.8rem;
+            margin: 0 0 1rem 0;
             color: #ffffff;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
         }
 
-        .content p {
-            margin-bottom: 1.5rem;
-            color: #cccccc;
-        }
-        
         .project-tags {
             display: flex;
             gap: 0.5rem;
@@ -114,34 +185,115 @@
         }
         
         .project-tags span {
-            background: rgba(94, 106, 210, 0.15);
-            color: var(--accent);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: 500;
+            background: rgba(134, 120, 249, 0.18);
+            color: #b6b0ff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.2rem;
-            }
-            .content h2 {
-                font-size: 1.75rem;
-            }
+        .project-card.flagship .project-tags span {
+            background: rgba(212, 165, 116, 0.18);
+            color: var(--accent-gold);
         }
+
+        .project-body p {
+            color: #b0b6cc;
+            margin-bottom: 1.2rem;
+            font-size: 0.96rem;
+        }
+
+        .project-body h3 {
+            font-size: 1.05rem;
+            color: #ffffff;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem;
+            border-left: 3px solid var(--accent);
+            padding-left: 0.6rem;
+        }
+
+        .project-actions {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .btn-repo {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.4rem;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: linear-gradient(135deg, var(--accent-purple), #5444d4);
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 15px rgba(134, 120, 249, 0.3);
+        }
+
+        .btn-repo:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(134, 120, 249, 0.5);
+            background: linear-gradient(135deg, #9689ff, #6252e0);
+        }
+
+        .btn-repo.gold {
+            background: linear-gradient(135deg, #d4a574, #b88651);
+            color: #0a0a1a;
+            box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+        }
+
+        .btn-repo.gold:hover {
+            background: linear-gradient(135deg, #e5ba8a, #c99661);
+            box-shadow: 0 6px 20px rgba(212, 165, 116, 0.5);
+        }
+
+        .btn-sec {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-color);
+        }
+
+        .btn-sec:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+            background: rgba(78, 205, 196, 0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer strong { color: var(--text-color); }
     </style>
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org Profile & Repository Action Matrix -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Proyectos de Damian Fabricio Macancela Caguana",
-      "description": "Portafolio de proyectos de ciberseguridad y desarrollo por Damian Fabricio Macancela Caguana.",
+      "@type": "CollectionPage",
+      "name": "Obras Técnicas y Proyectos de Ingeniería - Damian Fabricio Macancela Caguana",
+      "description": "Repositorio central de ciberseguridad financiera, CivicTech y derecho digital de Damian Fabricio Macancela Caguana.",
+      "url": "https://damianmacancela.github.io/proyectos.html",
       "author": {
         "@type": "Person",
-        "name": "Damian Fabricio Macancela Caguana"
+        "name": "Damian Fabricio Macancela Caguana",
+        "jobTitle": "Jefe de Sistemas, Abogado Digital y Consultor en Ciberseguridad",
+        "worksFor": { "@type": "Organization", "name": "Consejo Tecnológico del Azuay & ITSA" }
       }
     }
     </script>
@@ -150,67 +302,188 @@
 
     <div class="container">
         <nav>
-            <a href="index.html">Volver al inicio</a>
+            <a href="index.html">← Volver al Portal Maestro</a>
+            <div style="display: flex; gap: 0.8rem;">
+                <a href="libro-codigo-resiliencia.html">📗 Libro Resiliencia</a>
+                <a href="manual-defensa-ciudadano-ecuatoriano.html">📘 Manual Cívico</a>
+                <a href="prensa-medios.html">📻 Sala de Prensa</a>
+                <a href="blog/index.html">📑 Bitácora Tecnológica</a>
+            </div>
         </nav>
 
         <header>
-            <h1>Proyectos y Casos de Estudio</h1>
+            <h1>Obras, Arquitecturas & Proyectos de Ingeniería Tecnológica</h1>
             <div class="meta">
-                Selección de trabajos de Damian Fabricio Macancela Caguana integrando tecnología, seguridad y derecho.
+                Un ecosistema soberano donde la <strong>ciberdefensa bancaria (ITSA)</strong>, el <strong>rigor jurídico constitucional (UTPL)</strong> y la <strong>innovación pública cívica</strong> convergen en soluciones operatively demostradas.
             </div>
+            <div class="legal-badge">⚖️ Todas las obras tuteladas por el SENADI y el Código Ingenios de Ecuador</div>
         </header>
 
-        <div class="content">
+        <div class="projects-grid">
             
-            <article>
-                <h2>ZeroTrustRedact</h2>
-                <div class="project-tags">
-                    <span>Ciberseguridad</span>
-                    <span>Desarrollo</span>
-                    <span>Protección de Datos</span>
+            <!-- PROYECTO 1: ZEROTRUST REDACT -->
+            <article class="project-card flagship">
+                <div class="project-header">
+                    <h2>🛡️ ZeroTrustRedact Engine</h2>
+                    <div class="project-tags">
+                        <span>Ciberseguridad Bancaria</span>
+                        <span>Python Core</span>
+                        <span>NLP & PII Redaction</span>
+                        <span>LOPDP Ecuador</span>
+                    </div>
                 </div>
-                <p><strong>Motivación:</strong> Con la entrada en vigor de normativas estrictas de privacidad de datos, identifiqué la necesidad de una herramienta automatizada que pudiera sanitizar documentos legales y financieros antes de su distribución pública, minimizando el error humano en la censura de datos sensibles.</p>
-                
-                <h3>Explicación Técnica y Arquitectura</h3>
-                <p>ZeroTrustRedact es una solución desarrollada internamente para la redacción automática (censura) de PII (Información Personal Identificable). Utiliza modelos de Procesamiento de Lenguaje Natural (NLP) para identificar nombres, números de identificación (cédulas), direcciones y montos financieros dentro de documentos PDF y texto plano. La arquitectura está diseñada bajo los principios de <em>Zero Trust</em>, garantizando que los documentos se procesan en memoria y no se almacenan en disco sin cifrado, asegurando que el proceso mismo de limpieza no se convierta en un punto de fuga.</p>
-                
-                <h3>Impacto</h3>
-                <p>Redujo el tiempo de procesamiento de documentos en un 80% y eliminó casi por completo las incidencias de exposición accidental de datos personales, asegurando el cumplimiento con los estándares legales de privacidad.</p>
+                <div class="project-body">
+                    <p><strong>Motivación e Ingeniería:</strong> Con el rigor sancionador de la LOPDP en Ecuador, desarrollé desde cero un motor automatizado que identifica y elimina criptográficamente información personal (cédulas, RUCs, cuentas, historiales crediticios) en documentos financieros antes de su circulación pública o procesamiento judicial.</p>
+                    
+                    <h3>Arquitectura y Filosofía Zero Trust</h3>
+                    <p>A diferencia de soluciones comerciales que vulneran la soberanía cargando datos a nubes externas, ZeroTrustRedact ejecuta el 100% de la sanitización en <em>memoria RAM volátil</em>. Integra expresiones regulares diseñadas específicamente para documentos ecuatorianos sin escrituras residuales en disco de servidores no verificados.</p>
+                    
+                    <h3>Impacto Comprobado y Titularidad</h3>
+                    <p>Optimiza tiempos de auditoría en cooperativas del Azuay en un 80% y elimina riesgos de exfiltración accidental. Derechos de autor inalienables del creador originario al tenor de los Arts. 118 y 120 del Código Ingenios / SENADI.</p>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/DamianMacancela/ZeroTrustRedact-Engine" target="_blank" class="btn-repo gold">⚙️ Ver Código y Repositorio en GitHub</a>
+                    <a href="recursos-lopdp.html" class="btn-repo btn-sec">📑 Marco LOPDP</a>
+                </div>
             </article>
 
-            <article>
-                <h2>Arquitectura DLP Financiera</h2>
-                <div class="project-tags">
-                    <span>Infraestructura</span>
-                    <span>Auditoría</span>
-                    <span>Finanzas</span>
+            <!-- PROYECTO 2: DLP FINANCIERA SEPS -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h2>🔐 Arquitectura DLP Bancaria (SEPS)</h2>
+                    <div class="project-tags">
+                        <span>Data Loss Prevention</span>
+                        <span>Infraestructura Bancaria</span>
+                        <span>PowerShell Auditing</span>
+                        <span>Normativa SEPS</span>
+                    </div>
                 </div>
-                <p><strong>Motivación:</strong> Como Jefe de Sistemas en una cooperativa financiera, el riesgo de fuga de información (tanto maliciosa como accidental) es una amenaza constante que puede costar millones y destruir la reputación institucional.</p>
-                
-                <h3>Explicación Técnica y Arquitectura</h3>
-                <p>Una solución de Data Loss Prevention (DLP) no es solo un software, es una estrategia integral. Diseñé e implementé una arquitectura DLP que monitorea el flujo de datos en tránsito (redes, correos), datos en reposo (bases de datos, servidores de archivos) y datos en uso (endpoints). Implementé clasificadores automatizados de sensibilidad, bloqueos en puertos USB, cifrado de discos (BitLocker) y un proxy inverso para la inspección profunda de tráfico web (DPI).</p>
-                
-                <h3>Impacto</h3>
-                <p>Logramos visibilidad completa sobre los datos corporativos, previniendo exfiltraciones. La auditoría interna demostró una madurez de seguridad elevada, posicionando a la cooperativa como líder en el cumplimiento de normativas de la Superintendencia de Economía Popular y Solidaria (SEPS) de Ecuador.</p>
+                <div class="project-body">
+                    <p><strong>Desafío Institucional:</strong> Como Jefe de Sistemas en una cooperativa de ahorro y crédito (+15,000 socios en el sur de Ecuador), el riesgo de fuga de información interna o exfiltración por malware requiere un blindaje que trascienda al simple software comercial.</p>
+                    
+                    <h3>Triple Pilar de Ciberdefensa Transaccional</h3>
+                    <p>Diseñé y programé un modelo integral de protección que audita el flujo en tres dimensiones: <strong>Tránsito</strong> (Inspección profunda de paquetes TLS/DPI), <strong>Reposo</strong> (Auditoría continua con BitLocker TDE en bases de datos relacionales y rule 3-2-1-0) y <strong>Uso</strong> (Hardening de endpoints y bloqueo automatizado de puertos USB en terminales comerciales).</p>
+                    
+                    <h3>Auditoría y Reporte Automatizado</h3>
+                    <p>El repositorio incluye el script en PowerShell <code>seps_dlp_auditing.ps1</code> que verifica en tiempo real la integridad del cifrado e informa desviaciones a los comités de seguridad institucional y auditores externos de la SEPS.</p>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/DamianMacancela/DLP-Financiera-SEPS-Ecuador" target="_blank" class="btn-repo">💻 Ver Scripts & Framework DLP</a>
+                    <a href="blog/ciberseguridad-cooperativas.html" class="btn-repo btn-sec">📖 Artículo Científico</a>
+                </div>
             </article>
-            
-            <article>
-                <h2>Plataforma de Transparencia Municipal</h2>
-                <div class="project-tags">
-                    <span>Innovación Pública</span>
-                    <span>Gobierno Abierto</span>
-                    <span>UI/UX</span>
+
+            <!-- PROYECTO 3: CIVICTECH DASHBOARD GADS AZUAY -->
+            <article class="project-card flagship">
+                <div class="project-header">
+                    <h2>🏛️ Dashboard Cívico GADs Azuay</h2>
+                    <div class="project-tags">
+                        <span>Innovación Pública</span>
+                        <span>CivicTech & Datos Abiertos</span>
+                        <span>Cero Licencias Privativas</span>
+                        <span>Soberanía Tecnológica</span>
+                    </div>
                 </div>
-                <p><strong>Visión:</strong> Impulsado por mi interés en la política y mi rol en el Consejo Tecnológico del Azuay, concebí este proyecto para modernizar la forma en que los municipios presentan su información financiera y de contratación pública a los ciudadanos.</p>
-                
-                <h3>El Prototipo y Potencial</h3>
-                <p>El prototipo consta de un dashboard interactivo que se conecta a fuentes de datos abiertos. En lugar de complejos archivos de Excel, los ciudadanos pueden explorar los presupuestos, procesos de contratación pública y el estado de las obras mediante visualizaciones claras (gráficos dinámicos, mapas interactivos). La plataforma fue diseñada con un enfoque <em>mobile-first</em> y estándares de accesibilidad.</p>
-                
-                <h3>Impacto Proyectado</h3>
-                <p>El potencial de esta plataforma es enorme para reducir la opacidad en la gestión pública local. Facilita la auditoría ciudadana, promueve la participación cívica y fortalece la confianza en las instituciones del Estado, cerrando la brecha entre el ciudadano de a pie y la administración pública.</p>
+                <div class="project-body">
+                    <p><strong>Visión del Consejo Tecnológico:</strong> La opacidad financiera en los municipios y GADs de Cuenca y Azuay socava la confianza ciudadana al publicar presupuestos en formatos cerrados o depender de licencias privativas multimillonarias e inaccesibles al ciudadano de a pie.</p>
+                    
+                    <h3>El Modelo Abierto sin Gastos Innecesarios</h3>
+                    <p>Concebí este prototipo interactivo en tecnologías web abiertas (Vanilla CSS, JS y HTML5) conectadas a fuentes de datos abiertos municipales. Permite el rastreo visual e instantáneo de contratos públicos, partidas presupuestarias y avances de obra cívica por teléfono o computadora.</p>
+                    
+                    <h3>Ahorro Cívico para la Comunidad</h3>
+                    <p>Su adopción erradica el gasto público en licenciamientos extranjeros cerrados, liberando cientos de miles de dólares que retornan al bienestar del Azuay, garantizando control y auditoría cívicos plenos bajo la protección legal del SENADI.</p>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/DamianMacancela/Dashboard-Transparencia-GADs-Azuay" target="_blank" class="btn-repo gold">🌐 Ver Prototipo Cívico & Código</a>
+                    <a href="blog/innovacion-publica-azuay.html" class="btn-repo btn-sec">🏛️ Ensayo sobre GADs</a>
+                </div>
+            </article>
+
+            <!-- PROYECTO 4: LOPDP COMPLIANCE TOOLKIT -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h2>⚖️ LOPDP Compliance Toolkit</h2>
+                    <div class="project-tags">
+                        <span>LegalTech Ecuador</span>
+                        <span>Derecho Digital UTPL</span>
+                        <span>Derechos ARCO JSON</span>
+                        <span>Auditoría DPIA</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Fusión Jurisprudencia & Ciberseguridad:</strong> La verdadera efectividad del Derecho Digital no se logra con retórica abstracta, sino traduciendo los mandatos constitucionales y de la LOPDP en flujos informáticos inquebrantables dentro del código informático.</p>
+                    
+                    <h3>Suite Estandarizada de Defensa y ARCO</h3>
+                    <p>Este toolkit jurídico-técnico desarrollado por Damian Macancela proporciona esquemas JSON oficiales (<code>arco_intake_template.json</code>) para automatizar la recepción y tramitación de los Derechos ARCO (Acceso, Rectificación, Cancelación y Oposición) en empresas ecuatorianas.</p>
+                    
+                    <h3>Protección contra Telemercadeo Abusivo</h3>
+                    <p>Incorpora directrices resolutivas de amparo cívico para frenar el acoso de call centers y la venta ilegal de bases de datos crediticias bajo apercibimiento administrativo ante la Superintendencia de Protección de Datos Personales de Ecuador.</p>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/DamianMacancela/LOPDP-Compliance-Toolkit-Ecuador" target="_blank" class="btn-repo">⚖️ Descargar Kit Legal-Tech</a>
+                    <a href="recursos-lopdp.html" class="btn-repo btn-sec">🛡️ Central LOPDP</a>
+                </div>
+            </article>
+
+            <!-- PROYECTO 5: SOC & INCUBADORA HACKERS ÉTICOS TEC AZUAY -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h2>🎓 Incubadora SOC — Tecnológico del Azuay</h2>
+                    <div class="project-tags">
+                        <span>Formación Ciberdefensa</span>
+                        <span>Laboratorio SOC Azuay</span>
+                        <span>Hackers Éticos</span>
+                        <span>Educación Soberana</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Misión Educativa 2026-2030:</strong> Como líder institucional y directivo vinculado al Tecnológico del Azuay e ITSA, formulo un ecosistema de capacitación masiva para convertir a la juventud azuayana en el semillero soberano de defensa informática más potente de Hispanoamérica.</p>
+                    
+                    <h3>Laboratorios de Simulación y Análisis Táctico</h3>
+                    <p>El repositorio alberga el diseño académico (<code>soc_curriculum.md</code>) estructurado en tres módulos de alto rigor: Arquitectura Zero Trust & Ciberdefensa Bancaria, Aplicación Práctica de Derecho Digital (LOPDP/UTPL) y Desarrollo de Software Público Cívico sin dependencias privativas.</p>
+                    
+                    <h3>Desarrollo del Talento Sur Ecuatoriano</h3>
+                    <p>Una apuesta nacional e irrenunciable por la soberanía tecnológica, cerrando la brecha entre la universidad teórica y la trinchera real ante ataques cibernéticos contra infraestructura crítica.</p>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/DamianMacancela/SOC-Incubadora-Hackers-Eticos-Tec-Azuay" target="_blank" class="btn-repo">🎓 Ver Plan Curricular & Lab SOC</a>
+                    <a href="blog/tecnologico-azuay-incubadora-hackers-eticos.html" class="btn-repo btn-sec">📑 Manifiesto Académico</a>
+                </div>
+            </article>
+
+            <!-- PROYECTO 6: REPOSITORIO CENTRAL DE DERECHO DIGITAL & CIBERSEGURIDAD ECUADOR -->
+            <article class="project-card">
+                <div class="project-header">
+                    <h2>📚 Repositorios Centrales del Ecosistema</h2>
+                    <div class="project-tags">
+                        <span>Open Source Matrix</span>
+                        <span>Recursos Ecuador</span>
+                        <span>Jurisprudencia Latam</span>
+                        <span>GitHub Authority</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <p><strong>Acceso Total al Conocimiento:</strong> Complementando las obras de software y legal-tech, mantengo activos en GitHub repositorios comunitarios que agregan normativas locales, reportes del CSIRT ecuatoriano y documentación técnica especializada de libre consulta para la academia y el sector público.</p>
+                    
+                    <h3>Colección del Arsenal Tecnológico</h3>
+                    <p>Acceso directo a <code>cybersecurity-ecuador-resources</code> y <code>derecho-digital-latam</code>, junto con los repositorios espejo de los libros oficiales <em>El Código de la Resiliencia</em> y el <em>Manual de Defensa Digital y Ciber-Soberanía del Ciudadano Ecuatoriano</em>.</p>
+                    
+                    <h3>Transparencia y Autoridad Digital</h3>
+                    <p>Un historial inquebrantable de aportes técnicos de Damian Fabricio Macancela Caguana al servicio de la modernización cívica e institucional de la República del Ecuador.</p>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/DamianMacancela/cybersecurity-ecuador-resources" target="_blank" class="btn-repo">🛡️ Recursos Ciberseguridad</a>
+                    <a href="https://github.com/DamianMacancela/derecho-digital-latam" target="_blank" class="btn-repo btn-sec">⚖️ Derecho Digital Latam</a>
+                </div>
             </article>
 
         </div>
+
+        <footer>
+            <p>© 2026 <strong>Damian Fabricio Macancela Caguana</strong> (Fabricio Macancela) — Cuenca, Azuay, Ecuador.<br>
+            Jefe de Sistemas, Abogado Digital (UTPL), Especialista en Ciberseguridad (ITSA) y Miembro del Consejo Tecnológico del Azuay.<br>
+            ⚖️ Todas las creaciones, códigos informáticos, metodologías cívicas y textos explicativos de este portal son obras protegidas bajo el <strong>Código Orgánico de la Economía Social de los Conocimientos, Creatividad e Innovación (Código Ingenios)</strong> de Ecuador y los registros oficiales ante el <strong>SENADI</strong>. Todos los derechos morales son inalienables, imprescriptibles e irrenunciables.</p>
+        </footer>
 
     </div>
 
