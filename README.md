@@ -2,7 +2,7 @@
 
 🌐 **Derecho · Ciberseguridad · Innovación Pública**
 
-Sitio web personal de Damian Fabricio Macancela Caguana. Estudiante de Derecho (UTPL), especialista en Ciberseguridad (ITSA), experiencia de prácticas en ciberseguridad en el sector financiero cooperativo y miembro del Consejo del Tecnológico del Azuay.
+Sitio web personal de Damian Fabricio Macancela Caguana. Estudiante de Derecho (UTPL) y Tecnología en Ciberseguridad (ITSA), con experiencia de prácticas en el sector cooperativo y miembro del Consejo del Tecnológico del Azuay.
 
 ## 🔗 Secciones
 
